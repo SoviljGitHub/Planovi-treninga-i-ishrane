@@ -1,0 +1,262 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+
+}
+
+.navbar { 
+    top: 0;  /* Postavlja ga na sam vrh */
+    left: 0;
+    width: 91%;  /* Širina preko celog ekrana */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #181818;
+    padding: 15px 50px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;  /* Osigurava da je navbar iznad ostalog sadržaja */
+    margin-bottom: 20px;
+}
+
+/* Stilizacija logotipa */
+.logo img {
+    height: 80px;  /* Prilagodite visinu prema potrebama */
+    width: auto;   /* Širina se automatski prilagođava kako bi se očuvala proporcija slike */
+    transition: 0.3s;
+    margin-left: 30px;
+}
+
+/* Stilizacija navigacionih linkova */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: 0.3s ease-in-out;
+    position: relative;
+}
+
+/* Hover efekat na dugmadima */
+.nav-links a:hover {
+    color: #f8b400;
+    transform: scale(1.1);
+}
+
+/* Animacija ispod dugmadi */
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: #f8b400;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px;
+}
+
+.product-item {
+    width: 250px;
+    text-align: center;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.product-price {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #218838;
+}
+
+/* Stilovi za footer */
+/* Footer sekcija */
+.footer {
+    background: #dcdada; /* Tamno siva boja za elegantan izgled */
+    padding: 30px 0;
+    text-align: center;
+    color: #fff;
+    margin-top: 40px;
+}
+
+/* Stilizacija ikonica plaćanja */
+.payment-methods {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Razmak između ikonica */
+    margin-bottom: 20px;
+}
+
+.payment-icon {
+    height: 50px; /* Veće ikonice */
+    width: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.payment-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Stilizacija društvenih mreža */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    height: 40px; /* Veće ikonice */
+    width: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+/* Stilizacija logotipa u footeru */
+.footer-logo {
+    margin-top: 20px;
+}
+
+.logo-footer {
+    height: 100px; /* Možeš prilagoditi veličinu */
+    width: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo-footer:hover {
+    transform: scale(1.1);
+}
+
+/* Dugme za promenu teme */
+.theme-toggle-btn {
+    background-color: transparent;
+    border: 2px solid #f8b400;
+    color: #f8b400;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-left: 20px;
+}
+
+.theme-toggle-btn:hover {
+    background-color: #f8b400;
+    color: #181818;
+}
+
+/* Tamna tema */
+body.dark-mode {
+    background-color: #121212;
+    color: #e4e4e4;
+}
+
+body.dark-mode .navbar {
+    background-color: #1f1f1f;
+}
+
+body.dark-mode .product-item {
+    background-color: #1e1e1e;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .product-price {
+    color: #ddd;
+}
+
+body.dark-mode .btn {
+    background-color: #f8b400;
+    color: #181818;
+}
+
+body.dark-mode .btn:hover {
+    background-color: #d99c00;
+}
+
+body.dark-mode .footer {
+    background-color: #1f1f1f;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 10px 50px; /* možeš korigovati poziciju po želji */
+}
+
+.language-selector {
+  position: static; /* više nije fiksiran */
+  margin-top: -8px;
+}
+
+.language-selector select {
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+}
