@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <!-- Slick CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Merliness nudi personalizovane planove treninga bazirane na calisthenics metodi – za snagu, definiciju i zdrav stil života.">
+    <title>Merliness | Calisthenics planovi za snagu i definiciju</title>
+    <link rel="stylesheet" href="pocetna.css">
+    <link rel="icon" type="image/png" href="logo-merliness.png">
+</head>
+<body>
+
+    <!-- Navigacija -->
+  <nav class="navbar">
+    <div class="logo">
+        <a href="pocetna.html">
+            <img src="logo-merliness.png" alt="Merliness Logo" />
+        </a>
+    </div>
+    <ul class="nav-links">
+        <li><a href="pocetna.html" data-sr="Početna" data-en="Home" >Početna</a></li>
+        <li><a href="#o-meni" data-sr="O meni" data-en="About me">O meni</a></li>
+        
+
+        <li class="dropdown" id="shopDropdown">
+            <a href="#" onclick="toggleDropdown(event)" data-sr="Planovi " data-en="Plans ▼">Planovi ▼</a>
+            <ul class="dropdown-content" id="shopMenu">
+                <li><a href="zimski-plan.html" data-sr="Zimski plan" data-en="Winter plan" >Zimski plan</a></li>
+                <li><a href="letnji-plan.html" data-sr="Letnji plan" data-en="Summer plan">Letnji plan</a></li>
+                <li><a href="ruski-plan.html" data-sr="Ruski zgib" data-en="Russian pull-up">Ruski zgib</a></li>
+                <li><a href="letnji-ruski-plan.html" data-sr="Ruski + letnji" data-en="Russian + summer">Ruski + letnji</a></li>
+                <li><a href="hibrdni-plan.html" data-sr="Hibridni plan" data-en="Hybrid plan">Hibridni plan</a></li>
+            </ul>
+        </li>
+        <li><a href="shop.html" data-sr="Shop" data-en="Shop" >Shop</a></li>
+    </ul>
+
+    <div class="language-selector">
+    <select onchange="changeLanguage(this)">
+      <option value="sr" selected>🇷🇸 Srpski</option>
+      <option value="en">🇬🇧 English</option>
+    </select>
+    <button id="theme-toggle" class="theme-toggle-btn" data-sr="🌓 Tema" data-en="🌓 Theme">🌓 Tema</button>
+  </div>
+</nav>
+
+        <div class="container" >
+  <h1 class="text-shadow heading">DOBRODOŠLI NA MERLINESS</h1>
+  <div class="tags">
+    <p class="text-shadow"><small>SPREMNI ZA IZAZOV? KRENI ODMAH!</small></p>
+  </div>
+  </div>
+
+
+
+            <div class="bottom-container"> 
+            <div class="bottom-div1">   
+    <p class="tekst1" data-sr="Ako želite da unapredite svoje telo, BULK-ujete, dobijate snagu i izdržljivost ili postignete definiciju, ovde ste na pravom mestu." data-en="If you want to improve your body, bulk up, gain strength and endurance, or achieve definition, you’re in the right place.">
+        Ako želite da unapredite svoje telo, BULK-ujete, dobijate snagu i izdržljivost ili postignete definiciju, ovde ste na pravom mestu.
+    </p>   
+</div>
+
+<div class="bottom-div2"> 
+    <p class="tekst1" data-sr="Sa više od 400+ zadovoljnih klijenata, moj sistem treninga baziran na calisthenics HIGH REPS metodi je prava stvar za vas."
+       data-en="With over 400+ satisfied clients, my training system based on the calisthenics HIGH REPS method is the real deal for you.">
+        Sa više od 400+ zadovoljnih klijenata, moj sistem treninga baziran na calisthenics HIGH REPS metodi je prava stvar za vas.
+    </p>   
+</div>
+
+<div class="bottom-div3"> 
+    <p class="tekst1" data-sr="Takođe, mogu kreirati i hibridne planove koji kombinuju calisthenics sa teretanom kako biste postigli najbolje rezultate. Sve to možeš za jako niske cene!"
+       data-en="I can also create hybrid plans that combine calisthenics with gym training to help you achieve the best results. All of that at very affordable prices!">
+        Takođe, mogu kreirati i hibridne planove koji kombinuju calisthenics sa teretanom kako biste postigli najbolje rezultate. Sve to možeš za jako niske cene!
+    </p>  
+</div>
+</div>
+
+    
+
+    <!-- O meni sekcija -->
+    <section class="about-container" id="o-meni"> <!-- Dodat ID ovde -->
+        <div class="about-image">
+            <img src="merlin-o-meni.jpeg" alt="MerliNess">
+        </div>
+        <div class="about-text">
+            <h2 data-sr="Ko je MerliNess?" data-en="Who is Merliness?"> Ko je MerliNess?"</h2>
+            <p data-sr="Ja sam neko ko je do svoje 17. godine živeo kao većina ljudi – gubio vreme na aktivnosti koje nisu doprinosile mom razvoju, kao što su video igre, gledanje neprosvetljujućih videa na YouTube-u (jer tada još nije postojao TikTok), i provodio noći u klubovima. Bio sam stidljiv, bez samopouzdanja, a dani su mi prolazili bez jasnog cilja." data-en="I'm someone who lived like most people until I was 17 - wasting my time on activities that didn't contribute to my development, like playing video games, watching unenlightening videos on YouTube (because there was no TikTok back then), and spending nights in clubs. I was shy, lacking confidence, and my days passed without a clear goal.">
+                Ja sam neko ko je do svoje 17. godine živeo kao većina ljudi – gubio vreme na aktivnosti koje nisu doprinosile mom razvoju, kao što su video igre, gledanje neprosvetljujućih videa na YouTube-u (jer tada još nije postojao TikTok), i provodio noći u klubovima. Bio sam stidljiv, bez samopouzdanja, a dani su mi prolazili bez jasnog cilja.
+            </p>
+            <p data-sr="Međutim, sve se promenilo kada sam sa 18 godina odlučio da preuzmem kontrolu nad svojim životom. Posvetio sam se razvoju samog sebe, postavljanju ciljeva koje ranije nisam ni razmišljao da ostvarim, i najvažnije – sticanju discipline." data-en="However, everything changed when, at the age of 18, I decided to take control of my life. I devoted myself to developing myself, setting goals that I had never even thought of achieving before, and most importantly - gaining discipline."> Ko je MerliNess?" >
+                Međutim, sve se promenilo kada sam sa 18 godina odlučio da preuzmem kontrolu nad svojim životom. Posvetio sam se razvoju samog sebe, postavljanju ciljeva koje ranije nisam ni razmišljao da ostvarim, i najvažnije – sticanju discipline.
+            </p>
+            <p data-sr="Danas želim da podelim to iskustvo i pomognem i tebi da postigneš promene koje želiš u svom životu. Ako si spreman da uložiš trud i energiju, tu sam da ti pomognem da ostvariš svoje ciljeve!" data-en="Today I want to share that experience and help you achieve the changes you want in your life. If you are ready to invest effort and energy, I am here to help you achieve your goals!">
+                Danas želim da podelim to iskustvo i pomognem i tebi da postigneš promene koje želiš u svom životu. Ako si spreman da uložiš trud i energiju, tu sam da ti pomognem da ostvariš svoje ciljeve!
+            </p>
+        </div>
+    </section>
+
+    <section class="icons-container">
+        <div class="icon-box">
+            <img src="mentoring.png" alt="Online mentorstvo">
+            <h3 data-sr="Online Mentorstvo" data-en="Online Mentoring">Online Mentorstvo</h3>
+            <p data-sr="Ovo je često podcenjena usluga, ali izuzetno važna. Bez online mentorstva i jasnog plana, možeš praviti greške o kojima nisi ni svestan. Sa mentorstvom, bilo da je putem Discord grupe ili privatno, uvek možeš da mi se obratiš i razjasniš sve što ti nije jasno!" data-en="This is an often underrated service, but extremely important. Without online mentoring and a clear plan, you can make mistakes that you are not even aware of. With mentoring, whether it's through a Discord group or privately, you can always reach out to me and clarify anything you don't understand!" class="description">Ovo je često podcenjena usluga, ali izuzetno važna. Bez online mentorstva i jasnog plana, možeš praviti greške o kojima nisi ni svestan. Sa mentorstvom, bilo da je putem Discord grupe ili privatno, uvek možeš da mi se obratiš i razjasniš sve što ti nije jasno!</p>
+        </div>
+        <div class="icon-box">
+            <img src="dumbbell.png" alt="Trening">
+            <h3 data-sr="Trening" data-en="Training">Trening</h3>
+            <p data-sr="Plan treninga od 8-9 nedelja, prilagođen baš tebi! – Svaki plan se pravi specijalno za tvoje ciljeve, nivo fizičke pripremljenosti i potrebe." data-en="8-9 week training plan, tailored just for you! - Each plan is made specifically for your goals, level of physical preparation and needs." class="description">Plan treninga od 8-9 nedelja, prilagođen baš tebi! – Svaki plan se pravi specijalno za tvoje ciljeve, nivo fizičke pripremljenosti i potrebe.</p>
+        </div>
+        <div class="icon-box">
+            <img src="discord.png" alt="Discord">
+            <h3 data-sr="Discord" data-en="Discord">Discord</h3>
+            <p data-sr="Mesto gde se vodi online mentorstvo, ali i mnogo više! Ovde se nalaze video treninzi za trup i noge (prati - radi), kao i izazovi koji se postavljaju na nedeljnom nivou, kako bi tvoj napredak bio konstantan." data-en="A place where online mentoring takes place, but also much more! Here are video workouts for the trunk and legs (follow - work), as well as challenges that are set on a weekly basis, so that your progress is constant." class="description">Mesto gde se vodi online mentorstvo, ali i mnogo više! Ovde se nalaze video treninzi za trup i noge (prati - radi), kao i izazovi koji se postavljaju na nedeljnom nivou, kako bi tvoj napredak bio konstantan.</p>
+        </div>
+        <div class="icon-box">
+            <img src="diet.png" alt="Ishrana">
+            <h3 data-sr="Ishrana" data-en="Nutrition">Ishrana</h3>
+            <p data-sr="Ishrana, usklađena sa tvojim ciljevima! – Plan ishrane koji je razvijen da ti pomogne da postigneš rezultate koje želiš, bilo da je reč o mršavljenju, izgradnji mišića ili održavanju forme." data-en="Nutrition aligned with your goals! - A nutrition plan that's developed to help you achieve the results you want, whether it's losing weight, building muscle, or staying in shape." class="description">Ishrana, usklađena sa tvojim ciljevima! – Plan ishrane koji je razvijen da ti pomogne da postigneš rezultate koje želiš, bilo da je reč o mršavljenju, izgradnji mišića ili održavanju forme.</p>
+        </div>
+    </section>
+
+    <div class="background-container">
+        <img src="zimsko-prezivljavanje-logo.png" alt="Manja slika" class="small-image">
+        
+        <div class="text-container">
+            <h2>
+  <span data-sr="Šta dobijaš u" data-en="What you get in">Šta dobijaš u</span>
+  <span data-sr="ZIMSKOM PREŽIVLJAVANJU?" data-en="WINTER SURVIVAL?" class="highlight">ZIMSKOM PREŽIVLJAVANJU?</span>
+</h2>
+            <ul>
+    <li>
+        <img src="bluecheck.png" alt="Ikonica">
+        <span data-sr="Plan treninga " data-en="Training plan ">Plan treninga </span>
+        <span class="highlight-orange" data-sr="za 8 nedelja" data-en="for 8 weeks">za 8 nedelja</span>
+    </li>
+    <li>
+        <img src="bluecheck.png" alt="Ikonica">
+        <span data-sr="Online mentorstvo " data-en="Online mentoring for ">Online mentorstvo </span>
+        <span class="highlight-orange" data-sr="celih 8 nedelja" data-en="a full 8 weeks">celih 8 nedelja</span>
+    </li>
+    <li>
+        <img src="bluecheck.png" alt="Ikonica">
+        <span data-sr="Diskord grupu" data-en="Discord group">Diskord grupu</span>
+    </li>
+    <li>
+        <img src="bluecheck.png" alt="Ikonica">
+        <span data-sr="Video treninzi za noge i abs (prati - radi)" data-en="Leg and abs video workouts (follow - do)">Video treninzi za noge i abs (prati - radi)</span>
+    </li>
+    <li>
+        <img src="bluecheck.png" alt="Ikonica">
+        <span data-sr="Ishranu koju možeš koristiti " data-en="Nutrition you can use ">Ishranu koju možeš koristiti </span>
+        <span class="highlight-orange" data-sr="CEO ŽIVOT" data-en="YOUR WHOLE LIFE">CEO ŽIVOT</span>!
+    </li>
+    <li>
+        <img src="bluecheck.png" alt="Ikonica">
+        <span class="highlight-orange" data-sr="IZAZOVI" data-en="CHALLENGES">IZAZOVI</span>
+        <span data-sr=" koje ispunjavaš i nakon par ispunjenih izazova dobijaš vredne nagrade!" data-en=" you complete, and after a few completed challenges you earn valuable rewards!"> koje ispunjavaš i nakon par ispunjenih izazova dobijaš vredne nagrade!</span>
+    </li>
+    <li>
+    <img src="bluecheck.png" alt="Ikonica">
+    <span data-sr="I na sve to te čeka" data-en="And on top of all that, you'll be welcomed by an">I na sve to te čeka</span>
+    <span class="highlight-orange" data-sr=" jako dobra skupina ljudi" data-en=" amazing group of people"> jako dobra skupina ljudi</span>
+    <span data-sr=" koji će te podržavati i gurati napred!" data-en=" who will support and push you forward!"> koji će te podržavati i gurati napred!</span>
+</li>
+
+</ul>
+
+        
+            <div class="button-container">
+                <a href="zimski-plan.html">
+                    <button data-sr="NARUČI PLAN TRENINGA" data-en="ORDER TRAINING PLAN" class="order-button">NARUČI PLAN TRENINGA</button>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="hero-section" id="plantreninga">
+        <div data-sr="Budi najbolja verzija sebe: Pronađi savršen plan za trening!" data-en="Be the best version of you: Find the perfect training plan!" class="btn-shine" >Budi najbolja verzija sebe: Pronađi savršen plan za trening!</div>
+    </div>
+    
+
+  <div class="slider-container">
+    <div class="slider">
+    <img src="iskuj-telo.jpg" class="slide active" alt="Slika 1">
+    <img src="zimsko-prezivljavanje.jpg" class="slide" alt="Slika 2">
+    <img src="iskuj-telo-i-ruski.jpg" class="slide" alt="Slika 3">
+    <img src="ruski-zgib.jpg" class="slide" alt="Slika 4">
+    <img src="hibridni-plan.jpg" class="slide" alt="Slika 5">
+    </div>
+
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+
+    <div class="dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+</div>
+
+   
+        <div class="video-container">
+            <div class="video-wrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/t5acXcxLRsc?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+        </div>
+    
+        <p data-sr="Za još ovakvih sadržaja i dodatnih informacija, obavezno zapratite i ostale platforme!" data-en="For more such content and additional information, be sure to follow the other platforms!" class="follow-text">Za još ovakvih sadržaja i dodatnih informacija, obavezno zapratite i ostale platforme!</p>
+    
+        <div class="icon-container2">
+            <div class="aplication-box">
+               <a href="https://www.instagram.com/merli.ness/" target="_blank">
+                    <img src="instagram.png" alt="Instagram">
+                </a>
+                <p class="tag">@merli.ness</p>
+            </div>
+    
+            <div class="aplication-box">
+                <a href="https://www.youtube.com/@merliness" target="_blank">
+                    <img src="youtube.png" alt="YouTube">
+                </a>
+                <p class="tag">MerliNess</p>
+            </div>
+    
+            <div class="aplication-box">
+                <a href="https://www.tiktok.com/@merli.ness" target="_blank">
+                    <img src="tik-tok.png" alt="TikTok">
+                </a>
+                <p class="tag">@merli.ness</p>
+            </div>
+    
+            <div class="aplication-box">
+                <a href="https://www.instagram.com/merliness.edits/" target="_blank">
+                    <img src="instagram.png" alt="Twitter">
+                </a>
+                <p class="tag" id="pitanja">@merliness.edits</p>
+            </div>
+        </div>
+    
+
+    <div class="faq-container">
+    <div class="faq-title" data-sr="NAJČEŠĆA PITANJA" data-en="FREQUENTLY ASKED QUESTIONS">NAJČEŠĆA PITANJA</div>
+
+    <div class="faq-item">
+        <button class="faq-question" data-sr="Koliko vremena je potrebno da se vide prvi rezultati?" data-en="How long does it take to see the first results?">
+            Koliko vremena je potrebno da se vide prvi rezultati?
+            <span class="arrow">&#9654;</span>
+        </button>
+        <div class="faq-answer" data-sr="Prvi rezultati u povećanju izdržljivosti obično se primete već nakon druge nedelje, dok povećanje broja ponavljanja u zgibovima postaje vidljivo nakon tri nedelje. Promene u izgledu mogu se očekivati nakon 5-6 nedelja, u zavisnosti od tvoje posvećenosti treningu i ishrani!" data-en="Initial endurance improvements are usually noticed after the second week, while increases in pull-up repetitions become visible after three weeks. Physical appearance changes may occur after 5–6 weeks, depending on your dedication to training and diet.">
+            Prvi rezultati u povećanju izdržljivosti obično se primete već nakon druge nedelje, dok povećanje broja ponavljanja u zgibovima postaje vidljivo nakon tri nedelje. Promene u izgledu mogu se očekivati nakon 5-6 nedelja, u zavisnosti od tvoje posvećenosti treningu i ishrani!
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question" data-sr="Da li moram da promenim plan nakon određenog perioda?" data-en="Do I need to change the plan after a certain period?">
+            Da li moram da promenim plan nakon određenog perioda?
+            <span class="arrow">&#9654;</span>
+        </button>
+        <div class="faq-answer" data-sr="Plan treninga možeš koristiti maksimalno 6-8 nedelja kako bi postigao rezultate, jer, iako ćeš povećavati brojke, telo će vremenom postati naviknuto na rutinu. Da bi nastavio napredovati i izazvao nove promene, preporučujem da svaki put obnavljaš plan svakih 6 nedelja." data-en="You can use the training plan for a maximum of 6–8 weeks to achieve results. Even though you'll be increasing numbers, your body will eventually adapt to the routine. To continue progressing and triggering new changes, it's recommended to refresh the plan every 6 weeks.">
+            Plan treninga možeš koristiti maksimalno 6-8 nedelja kako bi postigao rezultate, jer, iako ćeš povećavati brojke, telo će vremenom postati naviknuto na rutinu. Da bi nastavio napredovati i izazvao nove promene, preporučujem da svaki put obnavljaš plan svakih 6 nedelja.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question" data-sr="Kako da pratim napredak u mom planu?" data-en="How can I track my progress in the plan?">
+            Kako da pratim napredak u mom planu?
+            <span class="arrow">&#9654;</span>
+        </button>
+        <div class="faq-answer" data-sr="Možeš pratiti broj ponavljanja, vreme provedeno u treningu (svaki sledeći put bi trebao brže odraditi ako je isti broj ponavljanja) postepeno povećanje intenziteta (npr. povećavanje brojki ili smanjivanje pauze) i fizičke promene u telu." data-en="You can track the number of reps, time spent training (ideally decreasing over time for the same number of reps), gradual intensity increases (e.g., more reps or shorter rest), and physical body changes.">
+            Možeš pratiti broj ponavljanja, vreme provedeno u treningu (svaki sledeći put bi trebao brže odraditi ako je isti broj ponavljanja) postepeno povećanje intenziteta (npr. povećavanje brojki ili smanjivanje pauze) i fizičke promene u telu.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question" data-sr="Mogu li postići bolje rezultate ako radim i na dane odmora?" data-en="Can I achieve better results if I train on rest days?">
+            Mogu li postići bolje rezultate ako radim i na dane odmora?
+            <span class="arrow">&#9654;</span>
+        </button>
+        <div class="faq-answer" data-sr="Dodavanje težih varijanti da, treniranje na dane odmora NIKAKO! Kako bi se telo oporavilo moraš dati telu da odmori kada je potrebno, odmor je isto bitan koliko i trening. Tako da nemoj raditi na dane odmora." data-en="Adding harder variations—yes. Training on rest days—ABSOLUTELY NOT! To recover, the body needs rest. Rest is just as important as training, so do not work out on rest days.">
+            Dodavanje težih varijanti da, treniranje na dane odmora NIKAKO! Kako bi se telo oporavilo moraš dati telu da odmori kada je potrebno, odmor je isto bitan koliko i trening. Tako da nemoj raditi na dane odmora.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question" data-sr="Da li ishrana igra veliku ulogu u postizanju rezultata sa high reps planom?" data-en="Does nutrition play a major role in achieving results with the high reps plan?">
+            Da li ishrana igra veliku ulogu u postizanju rezultata sa high reps planom?
+            <span class="arrow">&#9654;</span>
+        </button>
+        <div class="faq-answer" data-sr="Ako želiš maksimalne rezultate, definitivno. Govorim o dovoljno proteina i kalorija, da li možeš jesti nekada i ne toliko zdravo i opet napredovati u izgledu i svemu ostalom? Da. High reps sistem je zahtevan i zahteva veliku istrajnost u svakom treningu i troši mnogo kalorija, pa i sagoreva masti." data-en="If you want maximum results—definitely. I'm talking about enough protein and calories. Can you sometimes eat less healthy and still progress? Yes. The high reps system is demanding, requires persistence in every session, burns a lot of calories, and helps burn fat.">
+            Ako želiš maksimalne rezultate, definitivno. Govorim o dovoljno proteina i kalorija, da li možeš jesti nekada i ne toliko zdravo i opet napredovati u izgledu i svemu ostalom? Da. High reps sistem je zahtevan i zahteva veliku istrajnost u svakom treningu i troši mnogo kalorija, pa i sagoreva masti.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question" data-sr="Da li mogu da očekujem da ću izgraditi mišiće samo sa calisthenics high reps treningom?" data-en="Can I build muscle using only calisthenics high reps training?">
+            Da li mogu da očekujem da ću izgraditi mišiće samo sa calisthenics high reps treningom?
+            <span class="arrow">&#9654;</span>
+        </button>
+        <div class="faq-answer" data-sr="Da, visok broj ponavljanja, naročito u intenzivnim treninzima koji imaju cilj povećanje maksimalnog broja ponavljanja u seriji, snage i eksplozivnosti, izaziva jak metabolički stres. Zbog nešto dužih pauza, mišići imaju dovoljno vremena za brži oporavak, što dovodi do hipertrofije." data-en="Yes, a high number of reps—especially in intense sessions aimed at increasing max reps per set, strength, and explosiveness—causes strong metabolic stress. Longer rest times allow faster recovery, leading to hypertrophy.">
+            Da, visok broj ponavljanja, naročito u intenzivnim treninzima koji imaju cilj povećanje maksimalnog broja ponavljanja u seriji, snage i eksplozivnosti, izaziva jak metabolički stres. Zbog nešto dužih pauza, mišići imaju dovoljno vremena za brži oporavak, što dovodi do hipertrofije.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question" data-sr="Da li da uzmem plan ishrane sa planom treninga ako nije već uključen u istom ako mi je cilj mišićna masa i napredak u brojkama?" data-en="Should I get a meal plan along with the workout plan if it's not already included, especially if my goal is muscle mass and progression?">
+            Da li da uzmem plan ishrane sa planom treninga ako nije već uključen u istom ako mi je cilj mišićna masa i napredak u brojkama?
+            <span class="arrow">&#9654;</span>
+        </button>
+        <div class="faq-answer" data-sr="Trebao bi. Ishrana je jako važan faktor u progresu ali nije neophodna ako unosiš barem 1.8g - 2g proteina za 1kg telesne težine" data-en="You should. Nutrition is a very important factor in progress, but it’s not essential if you’re getting at least 1.8g–2g of protein per kg of body weight.">
+            Trebao bi. Ishrana je jako važan faktor u progresu ali nije neophodna ako unosiš barem 1.8g - 2g proteina za 1kg telesne težine
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question" data-sr="Da li su planovi namenjeni za sve? Napredne, srednje i početne vežbače?" data-en="Are the plans suitable for everyone—advanced, intermediate, and beginner exercisers?">
+            Da li su planovi namenjeni za sve? Napredne, srednje i početne vežbače?
+            <span class="arrow">&#9654;</span>
+        </button>
+        <div class="faq-answer" data-sr="Da, ovi treninzi nisu samo za sve vežbače, već se za svakog pojedinca pravi specifičan plan koji uzima u obzir njegove mogućnosti, fizičku spremu, ciljeve i obaveze!" data-en="Yes, these workouts are not just for all types of exercisers—they are tailored to each individual based on their capabilities, physical condition, goals, and schedule.">
+            Da, ovi treninzi nisu samo za sve vežbače, već se za svakog pojedinca pravi specifičan plan koji uzima u obzir njegove mogućnosti, fizičku spremu, ciljeve i obaveze!
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question" data-sr="Ko bi trebao da uzima Hybridni plan treninga?" data-en="Who should take the Hybrid training plan?">
+            Ko bi trebao da uzima Hybridni plan treninga?
+            <span class="arrow">&#9654;</span>
+        </button>
+        <div class="faq-answer" data-sr="Hybridni plan treninga je idealan za one koji žele da napreduju u svim aspektima podjednako: snazi u teretani, snazi u calisthenics-u, kondiciji i mišićnoj masi. Ovaj plan posebno odgovara ženama, jer se kod njih često više fokusira na donji deo tela, što zahteva korišćenje tegova za postizanje željenih rezultata." data-en="The Hybrid training plan is ideal for those who want to improve equally in all areas: gym strength, calisthenics strength, conditioning, and muscle mass. This plan is especially suitable for women, as they often focus more on the lower body, which requires using weights to achieve desired results.">
+            Hybridni plan treninga je idealan za one koji žele da napreduju u svim aspektima podjednako: snazi u teretani, snazi u calisthenics-u, kondiciji i mišićnoj masi. Ovaj plan posebno odgovara ženama, jer se kod njih često više fokusira na donji deo tela, što zahteva korišćenje tegova za postizanje željenih rezultata.
+        </div>
+    </div>
+</div>
+
+
+
+<footer>
+    <div class="footer-container">
+        <!-- Prva kolona: Merliness -->
+        <div class="footer-column">
+            <h2>Merliness</h2>
+            <a href="pocetna.html">
+            <img src="logo-merliness.png" alt="Merliness Logo">
+            </a>
+            <p>All rights reserved &copy;2025 Merliness</p>
+        </div>
+
+        <!-- Druga kolona: Društvene mreže -->
+        <div class="footer-column">
+            <h3 data-sr="Društvene mreže" data-en="Social networks" >Društvene mreže</h3>
+            <ul>
+                <li><a href="https://www.instagram.com/merli.ness?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a></li>
+                <li><a href="https://www.tiktok.com/@merli.ness?is_from_webapp=1&sender_device=pc" target="_blank">Tiktok</a></li>
+                <li><a href="https://youtube.com/@merliness?si=HnaK_U0tzvGo19pr" target="_blank">Youtube</a></li>
+            </ul>            
+        </div>
+
+        <!-- Treća kolona: Linkovi -->
+        <div class="footer-column">
+            <h3 data-sr="Linkovi" data-en="Links">Linkovi</h3>
+            <ul>
+                <li><a href="#o-meni" data-sr="O meni" data-en="About me">O meni</a></li>
+                <li><a href="#plantreninga" data-sr="Planovi" data-en="Plans">Planovi</a></li>
+                <li><a href="#pitanja" data-sr="Najčešća pitanja" data-en="FAQ">Najčešća pitanja</a></li>
+
+            </ul>
+        </div>
+
+        <!-- Četvrta kolona: Stranice -->
+        <div class="footer-column">
+            <h3 data-sr="Stranice" data-en="Pages">Stranice</h3>
+<ul>
+    <li><a href="pocetna.html" data-sr="Početna" data-en="Home">Početna</a></li>
+    <li><a href="shop.html" data-sr="Shop" data-en="Shop">Shop</a></li>
+    <li><a href="privacy.html" data-sr="Politika privatnosti" data-en="Privacy Policy">Politika privatnosti</a></li>
+    <li><a href="usage.html" data-sr="Politika korišćenja" data-en="Terms of Use">Politika korišćenja</a></li>
+</ul>
+
+        </div>
+    </div>
+
+    <!-- Kontakt forma -->
+    <div class="contact-form">
+    <h3 data-sr="Ako imaš neka pitanja, slobodno me kontaktiraj!" data-en="If you have any questions, feel free to contact me!">
+        Ako imaš neka pitanja, slobodno me kontaktiraj!
+    </h3>
+    <form method="POST">
+        <input type="text" name="ime" placeholder="Ime" data-sr="Ime" data-en="First name" required>
+        <input type="text" name="prezime" placeholder="Prezime" data-sr="Prezime" data-en="Last name" required>
+        <input type="email" name="email" placeholder="Email" data-sr="Email" data-en="Email" required>
+        <textarea name="poruka" placeholder="Poruka" data-sr="Poruka" data-en="Message" required></textarea>
+        <button type="submit" data-sr="Pošalji poruku" data-en="Send Message">Pošalji poruku</button>
+    </form>
+</div>
+
+</footer>
+
+    <script src="Pocetak.js"></script> 
+    
+    
+</body>
+</html>
