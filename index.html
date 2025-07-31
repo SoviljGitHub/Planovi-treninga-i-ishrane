@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Merliness nudi personalizovane planove treninga bazirane na calisthenics metodi – za snagu, definiciju i zdrav stil života.">
+    <title>Merliness | Calisthenics planovi za snagu i definiciju</title>
+    <link rel="stylesheet" href="pocetna.css">
+    <link rel="icon" type="image/ico" href="logo-merliness.ico">
+</head>
+<body>
+
+  <nav class="navigacioni-bar">
+    <div class="logo">
+        <a href="index.html">
+            <img src="logo-merliness.avif" alt="Merliness Logo" />
+        </a>
+    </div>
+
+    <button class="hamburger" onclick="prikaziMeni()" aria-label="Otvori meni">☰</button>
+
+    <ul class="navigacioni-linkovi" id="meni" >
+        <li><a href="index.html" prevod-sr="Početna" prevod-en="Home" >Početna</a></li>
+        <li><a href="o-meni.html" prevod-sr="O meni" prevod-en="About me">O meni</a></li>
+        
+
+        <li class="padajuci-meni" id="dugmeProdavnica">
+            <a href="#"  prevod-sr="Planovi ▼" prevod-en="Plans ▼">Planovi ▼</a>
+            <ul class="padajuci-meni-sadrzaj" id="meniProdavnica">
+                <li><a href="zimski-plan.html" prevod-sr="Zimski plan" prevod-en="Winter plan" >Zimski plan</a></li>
+                <li><a href="leto-plan.html" prevod-sr="Letnji plan" prevod-en="Summer plan">Letnji plan</a></li>
+                <li><a href="ruski-zgib.html" prevod-sr="Ruski zgib" prevod-en="Russian pull-up">Ruski zgib</a></li>
+                <li><a href="letnji-ruski-plan.html" prevod-sr="Ruski + letnji" prevod-en="Russian + summer">Ruski + letnji</a></li>
+                <li><a href="hibridni-plan.html" prevod-sr="Hibridni plan" prevod-en="Hybrid plan">Hibridni plan</a></li>
+            </ul>
+        </li>
+         <li><a href="proizvodi.html" prevod-sr="Proizvodi" prevod-en="Products">Proizvodi</a></li>
+        <li><a href="kontakt.html" prevod-sr="Kontakt" prevod-en="Contact">Kontakt</a></li> 
+    </ul>
+</nav>
+
+ <div class="izbor-jezika">
+    <select onchange="promeniJezik(this)">
+      <option value="sr" selected>🇷🇸 Srpski</option>
+      <option value="en">🇬🇧 English</option>
+    </select>
+    <button id="prekidac" class="prekidac-teme" prevod-sr="🌓 Tema" prevod-en="🌓 Theme">🌓 Tema</button>
+   
+    <div class="kontrola-fonta">
+        <button id="umanji-font">A−</button>
+        <button id="povecaj-font">A+</button>
+    </div>
+  </div>
+
+<div class="kontejner">
+  <h1 class="tekst-senka naslov" prevod-sr="DOBRODOŠLI NA MERLINESS" prevod-en="WELCOME TO MERLINESS">
+    DOBRODOŠLI NA MERLINESS
+  </h1>
+  <div class="oznake">
+    <p class="tekst-senka" prevod-sr="SPREMNI ZA IZAZOV? KRENI ODMAH!" prevod-en="READY FOR THE CHALLENGE? GO NOW!">
+      <small>SPREMNI ZA IZAZOV? KRENI ODMAH!</small>
+    </p>
+  </div>
+</div>
+
+            <div class="donji-kontejner"> 
+            <div class="donji-blok1">   
+    <p class="tekst1" prevod-sr="Ako želite da unapredite svoje telo, BULK-ujete, dobijate snagu i izdržljivost ili postignete definiciju, ovde ste na pravom mestu." prevod-en="If you want to improve your body, bulk up, gain strength and endurance, or achieve definition, you’re in the right place.">
+        Ako želite da unapredite svoje telo, BULK-ujete, dobijate snagu i izdržljivost ili postignete definiciju, ovde ste na pravom mestu.
+    </p>   
+</div>
+
+<div class="donji-blok2"> 
+    <p class="tekst1" prevod-sr="Sa više od 400+ zadovoljnih klijenata, moj sistem treninga baziran na calisthenics HIGH REPS metodi je prava stvar za vas."
+       prevod-en="With over 400+ satisfied clients, my training system based on the calisthenics HIGH REPS method is the real deal for you.">
+        Sa više od 400+ zadovoljnih klijenata, moj sistem treninga baziran na calisthenics HIGH REPS metodi je prava stvar za vas.
+    </p>   
+</div>
+
+<div class="donji-blok3"> 
+    <p class="tekst1" prevod-sr="Takođe, mogu kreirati i hibridne planove koji kombinuju calisthenics sa teretanom kako biste postigli najbolje rezultate. Sve to možeš za jako niske cene!"
+       prevod-en="I can also create hybrid plans that combine calisthenics with gym training to help you achieve the best results. All of that at very affordable prices!">
+        Takođe, mogu kreirati i hibridne planove koji kombinuju calisthenics sa teretanom kako biste postigli najbolje rezultate. Sve to možeš za jako niske cene!
+    </p>  
+</div>
+</div>   
+
+    <section class="ikonice-kontejner">
+        <div class="ikonice-kutija">
+            <img src="mentorstvo.png" alt="Online mentorstvo">
+            <h3 prevod-sr="Online Mentorstvo" prevod-en="Online Mentoring">Online Mentorstvo</h3>
+            <p prevod-sr="Ovo je često podcenjena usluga, ali izuzetno važna. Bez online mentorstva i jasnog plana, možeš praviti greške o kojima nisi ni svestan. Sa mentorstvom, bilo da je putem Discord grupe ili privatno, uvek možeš da mi se obratiš i razjasniš sve što ti nije jasno!" prevod-en="This is an often underrated service, but extremely important. Without online mentoring and a clear plan, you can make mistakes that you are not even aware of. With mentoring, whether it's through a Discord group or privately, you can always reach out to me and clarify anything you don't understand!" class="opis">Ovo je često podcenjena usluga, ali izuzetno važna. Bez online mentorstva i jasnog plana, možeš praviti greške o kojima nisi ni svestan. Sa mentorstvom, bilo da je putem Discord grupe ili privatno, uvek možeš da mi se obratiš i razjasniš sve što ti nije jasno!</p>
+        </div>
+        <div class="ikonice-kutija">
+            <img src="teg.png" alt="Trening">
+            <h3 prevod-sr="Trening" prevod-en="Training">Trening</h3>
+            <p prevod-sr="Plan treninga od 8-9 nedelja, prilagođen baš tebi! – Svaki plan se pravi specijalno za tvoje ciljeve, nivo fizičke pripremljenosti i potrebe." prevod-en="8-9 week training plan, tailored just for you! - Each plan is made specifically for your goals, level of physical preparation and needs." class="opis">Plan treninga od 8-9 nedelja, prilagođen baš tebi! – Svaki plan se pravi specijalno za tvoje ciljeve, nivo fizičke pripremljenosti i potrebe.</p>
+        </div>
+        <div class="ikonice-kutija">
+            <img src="diskord.png" alt="Diskord">
+            <h3 prevod-sr="Discord" prevod-en="Discord">Discord</h3>
+            <p prevod-sr="Mesto gde se vodi online mentorstvo, ali i mnogo više! Ovde se nalaze video treninzi za trup i noge (prati - radi), kao i izazovi koji se postavljaju na nedeljnom nivou, kako bi tvoj napredak bio konstantan." prevod-en="A place where online mentoring takes place, but also much more! Here are video workouts for the trunk and legs (follow - work), as well as challenges that are set on a weekly basis, so that your progress is constant." class="opis">Mesto gde se vodi online mentorstvo, ali i mnogo više! Ovde se nalaze video treninzi za trup i noge (prati - radi), kao i izazovi koji se postavljaju na nedeljnom nivou, kako bi tvoj napredak bio konstantan.</p>
+        </div>
+        <div class="ikonice-kutija">
+            <img src="ishrana.png" alt="Ishrana">
+            <h3 prevod-sr="Ishrana" prevod-en="Nutrition">Ishrana</h3>
+            <p prevod-sr="Ishrana, usklađena sa tvojim ciljevima! – Plan ishrane koji je razvijen da ti pomogne da postigneš rezultate koje želiš, bilo da je reč o mršavljenju, izgradnji mišića ili održavanju forme." prevod-en="Nutrition aligned with your goals! - A nutrition plan that's developed to help you achieve the results you want, whether it's losing weight, building muscle, or staying in shape." class="opis">Ishrana, usklađena sa tvojim ciljevima! – Plan ishrane koji je razvijen da ti pomogne da postigneš rezultate koje želiš, bilo da je reč o mršavljenju, izgradnji mišića ili održavanju forme.</p>
+        </div>
+    </section>
+
+     <div class="zimsko-prezivljavanje-kontejner">
+       
+        <img src="zimsko-prezivljavanje-logo.png" alt="Zimsko prezivljavanje logo" class="manja-slika">
+        
+        <div class="tekst-zimsko-prezivljavanje">
+            <h2>
+  <span prevod-sr="Šta dobijaš u" prevod-en="What you get in">Šta dobijaš u</span>
+  <span prevod-sr="ZIMSKOM PREŽIVLJAVANJU?" prevod-en="WINTER SURVIVAL?" class="fokus">ZIMSKOM PREŽIVLJAVANJU?</span>
+</h2>
+<p class="stavka">
+  <img src="plava-oznaka.png" alt="Plava kvačica" />
+  <span
+    prevod-sr="Plan treninga &lt;span class=&quot;fokus-plavo&quot;&gt;za 8 nedelja&lt;/span&gt;"
+    prevod-en="Training plan &lt;span class=&quot;fokus-plavo&quot;&gt;for 8 weeks&lt;/span&gt;">
+    Plan treninga <span class="fokus-plavo">za 8 nedelja</span>
+  </span>
+</p>
+
+
+<p class="stavka">
+  <img src="plava-oznaka.png" alt="Plava kvačica" />
+  <span
+    prevod-sr="Online mentorstvo &lt;span class=&quot;fokus-plavo&quot;&gt;celih 8 nedelja&lt;/span&gt;"
+    prevod-en="Online mentoring for &lt;span class=&quot;fokus-plavo&quot;&gt;a full 8 weeks&lt;/span&gt;">
+    Online mentorstvo <span class="fokus-plavo">celih 8 nedelja</span>
+  </span>
+</p>
+
+<p class="stavka">
+  <img src="plava-oznaka.png" alt="Plava kvačica" />
+  <span prevod-sr="Diskord grupu" prevod-en="Discord group">Diskord grupu</span>
+</p>
+
+<p class="stavka">
+  <img src="plava-oznaka.png" alt="Plava kvačica" />
+  <span prevod-sr="Video treninzi za noge i abs (prati - radi)" prevod-en="Leg and abs video workouts (follow - do)">Video treninzi za noge i abs (prati - radi)</span>
+</p>
+
+<p class="stavka">
+  <img src="plava-oznaka.png" alt="Plava kvačica" />
+  <span
+    prevod-sr="Ishranu koju možeš koristiti &lt;span class=&quot;fokus-plavo&quot;&gt;CEO ŽIVOT&lt;/span&gt;!"
+    prevod-en="Nutrition you can use &lt;span class=&quot;fokus-plavo&quot;&gt;YOUR WHOLE LIFE&lt;/span&gt;!">
+    Ishranu koju možeš koristiti <span class="fokus-plavo">CEO ŽIVOT</span>!
+  </span>
+</p>
+
+
+<p class="stavka">
+  <img src="plava-oznaka.png" alt="Plava kvačica" />
+  <span
+    prevod-sr="&lt;span class=&quot;fokus-plavo&quot;&gt;IZAZOVI&lt;/span&gt; koje ispunjavaš i vredne nagrade!"
+    prevod-en="&lt;span class=&quot;fokus-plavo&quot;&gt;CHALLENGES&lt;/span&gt; you complete and valuable rewards!">
+    <span class="fokus-plavo">IZAZOVI</span> koje ispunjavaš i vredne nagrade!
+  </span>
+</p>
+
+
+<p class="stavka">
+  <img src="plava-oznaka.png" alt="Plava kvačica" />
+  <span
+    prevod-sr="I na sve to te čeka &lt;span class=&quot;fokus-plavo&quot;&gt;jako dobra skupina ljudi&lt;/span&gt; koji će te podržavati i gurati napred!"
+    prevod-en="And on top of all that, you&apos;ll be welcomed by an &lt;span class=&quot;fokus-plavo&quot;&gt;amazing group of people&lt;/span&gt; who will support and push you forward!">
+    I na sve to te čeka <span class="fokus-plavo">jako dobra skupina ljudi</span> koji će te podržavati i gurati napred!
+  </span>
+</p>
+
+   
+            <div class="dugme-kontejner">
+                <a href="zimski-plan.html">
+                    <button prevod-sr="NARUČI PLAN TRENINGA" prevod-en="ORDER TRAINING PLAN" class="dugme-poruci">NARUČI PLAN TRENINGA</button>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+
+    
+    <div class="motivacioni-tekst" id="plantreninga">
+        <div prevod-sr="Budi najbolja verzija sebe: Pronađi savršen plan za trening!" prevod-en="Be the best version of you: Find the perfect training plan!" class="sjajni-tekst" >Budi najbolja verzija sebe: Pronađi savršen plan za trening!</div>
+    </div>
+
+
+  <!-- SEKCIJA: SLIDER PLANOVA -->
+  <section class="sekcija-klizac">
+    <h2 class="naslov-sekcije">Planovi</h2>
+    <div class="klizač-kontejner">
+      <div class="klizač">
+        <img src="iskuj-telo.jpg" class="slajd aktivno" alt="Iskuj telo">
+        <img src="zimsko-prezivljavanje.jpg" class="slajd" alt="Zimsko prezivljavanje">
+        <img src="iskuj-telo-i-ruski.jpg" class="slajd" alt="Iskuj telo i ruski zgib">
+        <img src="ruski-zgib.jpg" class="slajd" alt="Ruski zgib">
+        <img src="hibridni-plan.jpg" class="slajd" alt="Hibridni plan">
+      </div>
+      <button class="prethodno">&#10094;</button>
+      <button class="sledece">&#10095;</button>
+      <div class="tackice">
+        <span class="tacka aktivno"></span>
+        <span class="tacka"></span>
+        <span class="tacka"></span>
+        <span class="tacka"></span>
+        <span class="tacka"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEKCIJA: VIDEO PREVIEW -->
+  <section class="sekcija-video">
+    <h2 class="naslov-sekcije"> Edukativni video </h2>
+    <div class="video-kontejner">
+      <div class="okvir-videa">
+        <iframe
+          src="https://www.youtube.com/embed/t5acXcxLRsc?autoplay=1"
+          allow="encrypted-media"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEKCIJA: PRATI NAS -->
+  <section class="sekcija-zaprati">
+    <h2 class="naslov-sekcije">Prati nas</h2>
+    <p class="tekst-zaprati">
+      Za još ovakvih sadržaja i dodatnih informacija, obavezno zapratite i ostale platforme!
+    </p>
+  </section>
+
+  <!-- SEKCIJA: IKONICE DRUŠTVENIH MREŽA -->
+  <section class="sekcija-ikonice">
+    <h2 class="naslov-sekcije">Društvene mreže</h2>
+    <div class="ikonice-kontejner2">
+      <div class="kutija-aplikacija">
+        <a href="https://www.instagram.com/merli.ness/" target="_blank">
+          <img src="instagram.png" alt="Instagram">
+        </a>
+        <p class="oznaka">@merli.ness</p>
+      </div>
+      <div class="kutija-aplikacija">
+        <a href="https://www.youtube.com/@merliness" target="_blank">
+          <img src="jutjub.png" alt="YouTube">
+        </a>
+        <p class="oznaka">MerliNess</p>
+      </div>
+      <div class="kutija-aplikacija">
+        <a href="https://www.tiktok.com/@merli.ness" target="_blank">
+          <img src="tik-tok.png" alt="TikTok">
+        </a>
+        <p class="oznaka">@merli.ness</p>
+      </div>
+      <div class="kutija-aplikacija">
+        <a href="https://www.instagram.com/merliness.edits/" target="_blank">
+          <img src="instagram.png" alt="Instagram Edits">
+        </a>
+        <p class="oznaka">@merliness.edits</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
+
+    
+
+    <div class="najcesca-pitanja-kontejner">
+    <div class="najcesca-pitanja-naslov" prevod-sr="NAJČEŠĆA PITANJA" prevod-en="FREQUENTLY ASKED QUESTIONS">NAJČEŠĆA PITANJA</div>
+
+    <div class="najcesca-pitanja-stvar">
+        <button class="najcesca-pitanja" prevod-sr="Koliko vremena je potrebno da se vide prvi rezultati?" prevod-en="How long does it take to see the first results?">
+            Koliko vremena je potrebno da se vide prvi rezultati?
+            <span class="strelica">&#9654;</span>
+        </button>
+        <div class="odgovor" prevod-sr="Prvi rezultati u povećanju izdržljivosti obično se primete već nakon druge nedelje, dok povećanje broja ponavljanja u zgibovima postaje vidljivo nakon tri nedelje. Promene u izgledu mogu se očekivati nakon 5-6 nedelja, u zavisnosti od tvoje posvećenosti treningu i ishrani!" prevod-en="Initial endurance improvements are usually noticed after the second week, while increases in pull-up repetitions become visible after three weeks. Physical appearance changes may occur after 5–6 weeks, depending on your dedication to training and diet.">
+            Prvi rezultati u povećanju izdržljivosti obično se primete već nakon druge nedelje, dok povećanje broja ponavljanja u zgibovima postaje vidljivo nakon tri nedelje. Promene u izgledu mogu se očekivati nakon 5-6 nedelja, u zavisnosti od tvoje posvećenosti treningu i ishrani!
+        </div>
+    </div>
+
+    <div class="najcesca-pitanja-stvar">
+        <button class="najcesca-pitanja" prevod-sr="Da li moram da promenim plan nakon određenog perioda?" prevod-en="Do I need to change the plan after a certain period?">
+            Da li moram da promenim plan nakon određenog perioda?
+            <span class="strelica">&#9654;</span>
+        </button>
+        <div class="odgovor" prevod-sr="Plan treninga možeš koristiti maksimalno 6-8 nedelja kako bi postigao rezultate, jer, iako ćeš povećavati brojke, telo će vremenom postati naviknuto na rutinu. Da bi nastavio napredovati i izazvao nove promene, preporučujem da svaki put obnavljaš plan svakih 6 nedelja." prevod-en="You can use the training plan for a maximum of 6–8 weeks to achieve results. Even though you'll be increasing numbers, your body will eventually adapt to the routine. To continue progressing and triggering new changes, it's recommended to refresh the plan every 6 weeks.">
+            Plan treninga možeš koristiti maksimalno 6-8 nedelja kako bi postigao rezultate, jer, iako ćeš povećavati brojke, telo će vremenom postati naviknuto na rutinu. Da bi nastavio napredovati i izazvao nove promene, preporučujem da svaki put obnavljaš plan svakih 6 nedelja.
+        </div>
+    </div>
+
+    <div class="najcesca-pitanja-stvar">
+        <button class="najcesca-pitanja" prevod-sr="Kako da pratim napredak u mom planu?" prevod-en="How can I track my progress in the plan?">
+            Kako da pratim napredak u mom planu?
+            <span class="strelica">&#9654;</span>
+        </button>
+        <div class="odgovor" prevod-sr="Možeš pratiti broj ponavljanja, vreme provedeno u treningu (svaki sledeći put bi trebao brže odraditi ako je isti broj ponavljanja) postepeno povećanje intenziteta (npr. povećavanje brojki ili smanjivanje pauze) i fizičke promene u telu." prevod-en="You can track the number of reps, time spent training (ideally decreasing over time for the same number of reps), gradual intensity increases (e.g., more reps or shorter rest), and physical body changes.">
+            Možeš pratiti broj ponavljanja, vreme provedeno u treningu (svaki sledeći put bi trebao brže odraditi ako je isti broj ponavljanja) postepeno povećanje intenziteta (npr. povećavanje brojki ili smanjivanje pauze) i fizičke promene u telu.
+        </div>
+    </div>
+
+    <div class="najcesca-pitanja-stvar">
+        <button class="najcesca-pitanja" prevod-sr="Mogu li postići bolje rezultate ako radim i na dane odmora?" prevod-en="Can I achieve better results if I train on rest days?">
+            Mogu li postići bolje rezultate ako radim i na dane odmora?
+            <span class="strelica">&#9654;</span>
+        </button>
+        <div class="odgovor" prevod-sr="Dodavanje težih varijanti da, treniranje na dane odmora NIKAKO! Kako bi se telo oporavilo moraš dati telu da odmori kada je potrebno, odmor je isto bitan koliko i trening. Tako da nemoj raditi na dane odmora." prevod-en="Adding harder variations—yes. Training on rest days—ABSOLUTELY NOT! To recover, the body needs rest. Rest is just as important as training, so do not work out on rest days.">
+            Dodavanje težih varijanti da, treniranje na dane odmora NIKAKO! Kako bi se telo oporavilo moraš dati telu da odmori kada je potrebno, odmor je isto bitan koliko i trening. Tako da nemoj raditi na dane odmora.
+        </div>
+    </div>
+
+    <div class="najcesca-pitanja-stvar">
+        <button class="najcesca-pitanja" prevod-sr="Da li ishrana igra veliku ulogu u postizanju rezultata sa high reps planom?" prevod-en="Does nutrition play a major role in achieving results with the high reps plan?">
+            Da li ishrana igra veliku ulogu u postizanju rezultata sa high reps planom?
+            <span class="strelica">&#9654;</span>
+        </button>
+        <div class="odgovor" prevod-sr="Ako želiš maksimalne rezultate, definitivno. Govorim o dovoljno proteina i kalorija, da li možeš jesti nekada i ne toliko zdravo i opet napredovati u izgledu i svemu ostalom? Da. High reps sistem je zahtevan i zahteva veliku istrajnost u svakom treningu i troši mnogo kalorija, pa i sagoreva masti." prevod-en="If you want maximum results—definitely. I'm talking about enough protein and calories. Can you sometimes eat less healthy and still progress? Yes. The high reps system is demanding, requires persistence in every session, burns a lot of calories, and helps burn fat.">
+            Ako želiš maksimalne rezultate, definitivno. Govorim o dovoljno proteina i kalorija, da li možeš jesti nekada i ne toliko zdravo i opet napredovati u izgledu i svemu ostalom? Da. High reps sistem je zahtevan i zahteva veliku istrajnost u svakom treningu i troši mnogo kalorija, pa i sagoreva masti.
+        </div>
+    </div>
+
+    <div class="najcesca-pitanja-stvar">
+        <button class="najcesca-pitanja" prevod-sr="Da li mogu da očekujem da ću izgraditi mišiće samo sa calisthenics high reps treningom?" prevod-en="Can I build muscle using only calisthenics high reps training?">
+            Da li mogu da očekujem da ću izgraditi mišiće samo sa calisthenics high reps treningom?
+            <span class="strelica">&#9654;</span>
+        </button>
+        <div class="odgovor" prevod-sr="Da, visok broj ponavljanja, naročito u intenzivnim treninzima koji imaju cilj povećanje maksimalnog broja ponavljanja u seriji, snage i eksplozivnosti, izaziva jak metabolički stres. Zbog nešto dužih pauza, mišići imaju dovoljno vremena za brži oporavak, što dovodi do hipertrofije." prevod-en="Yes, a high number of reps—especially in intense sessions aimed at increasing max reps per set, strength, and explosiveness—causes strong metabolic stress. Longer rest times allow faster recovery, leading to hypertrophy.">
+            Da, visok broj ponavljanja, naročito u intenzivnim treninzima koji imaju cilj povećanje maksimalnog broja ponavljanja u seriji, snage i eksplozivnosti, izaziva jak metabolički stres. Zbog nešto dužih pauza, mišići imaju dovoljno vremena za brži oporavak, što dovodi do hipertrofije.
+        </div>
+    </div>
+
+    <div class="najcesca-pitanja-stvar">
+        <button class="najcesca-pitanja" prevod-sr="Da li da uzmem plan ishrane sa planom treninga ako nije već uključen u istom ako mi je cilj mišićna masa i napredak u brojkama?" prevod-en="Should I get a meal plan along with the workout plan if it's not already included, especially if my goal is muscle mass and progression?">
+            Da li da uzmem plan ishrane sa planom treninga ako nije već uključen u istom ako mi je cilj mišićna masa i napredak u brojkama?
+            <span class="strelica">&#9654;</span>
+        </button>
+        <div class="odgovor" prevod-sr="Trebao bi. Ishrana je jako važan faktor u progresu ali nije neophodna ako unosiš barem 1.8g - 2g proteina za 1kg telesne težine" prevod-en="You should. Nutrition is a very important factor in progress, but it’s not essential if you’re getting at least 1.8g–2g of protein per kg of body weight.">
+            Trebao bi. Ishrana je jako važan faktor u progresu ali nije neophodna ako unosiš barem 1.8g - 2g proteina za 1kg telesne težine
+        </div>
+    </div>
+
+    <div class="najcesca-pitanja-stvar">
+        <button class="najcesca-pitanja" prevod-sr="Da li su planovi namenjeni za sve? Napredne, srednje i početne vežbače?" prevod-en="Are the plans suitable for everyone—advanced, intermediate, and beginner exercisers?">
+            Da li su planovi namenjeni za sve? Napredne, srednje i početne vežbače?
+            <span class="strelica">&#9654;</span>
+        </button>
+        <div class="odgovor" prevod-sr="Da, ovi treninzi nisu samo za sve vežbače, već se za svakog pojedinca pravi specifičan plan koji uzima u obzir njegove mogućnosti, fizičku spremu, ciljeve i obaveze!" prevod-en="Yes, these workouts are not just for all types of exercisers—they are tailored to each individual based on their capabilities, physical condition, goals, and schedule.">
+            Da, ovi treninzi nisu samo za sve vežbače, već se za svakog pojedinca pravi specifičan plan koji uzima u obzir njegove mogućnosti, fizičku spremu, ciljeve i obaveze!
+        </div>
+    </div>
+
+    <div class="najcesca-pitanja-stvar">
+        <button class="najcesca-pitanja" prevod-sr="Ko bi trebao da uzima Hybridni plan treninga?" prevod-en="Who should take the Hybrid training plan?">
+            Ko bi trebao da uzima Hybridni plan treninga?
+            <span class="strelica">&#9654;</span>
+        </button>
+        <div class="odgovor" prevod-sr="Hybridni plan treninga je idealan za one koji žele da napreduju u svim aspektima podjednako: snazi u teretani, snazi u calisthenics-u, kondiciji i mišićnoj masi. Ovaj plan posebno odgovara ženama, jer se kod njih često više fokusira na donji deo tela, što zahteva korišćenje tegova za postizanje željenih rezultata." prevod-en="The Hybrid training plan is ideal for those who want to improve equally in all areas: gym strength, calisthenics strength, conditioning, and muscle mass. This plan is especially suitable for women, as they often focus more on the lower body, which requires using weights to achieve desired results.">
+            Hybridni plan treninga je idealan za one koji žele da napreduju u svim aspektima podjednako: snazi u teretani, snazi u calisthenics-u, kondiciji i mišićnoj masi. Ovaj plan posebno odgovara ženama, jer se kod njih često više fokusira na donji deo tela, što zahteva korišćenje tegova za postizanje željenih rezultata.
+        </div>
+    </div>
+</div>
+
+
+<footer>
+    <div class="futer-kontejner">
+        
+        <div class="futer-kolona">
+            <h2>Merliness</h2>
+            <a href="index.html">
+            <img src="logo-merliness.avif" alt="Merliness Logo">
+            </a>
+            <p>All rights reserved &copy;2025 Merliness</p>
+        </div>
+
+        <div class="futer-kolona">
+            <h3 prevod-sr="Društvene mreže" prevod-en="Social networks" >Društvene mreže</h3>
+            <ul>
+                <li><a href="https://www.instagram.com/merli.ness?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a></li>
+                <li><a href="https://www.tiktok.com/@merli.ness?is_from_webapp=1&sender_device=pc" target="_blank">Tiktok</a></li>
+                <li><a href="https://youtube.com/@merliness?si=HnaK_U0tzvGo19pr" target="_blank">Youtube</a></li>
+            </ul>            
+        </div>
+
+        <div class="futer-kolona">
+            <h3 prevod-sr="Linkovi" prevod-en="Links">Linkovi</h3>
+            <ul>
+                <li><a href="o-meni.html" prevod-sr="O meni" prevod-en="About me">O meni</a></li>
+                <li><a href="index.html#pitanja" prevod-sr="Najčešća pitanja" prevod-en="FAQ">Najčešća pitanja</a></li>
+                <li><a href="kontakt.html" prevod-sr="Kontakt" prevod-en="Contact">Kontakt</a></li> 
+            </ul>
+        </div>
+
+        <div class="futer-kolona">
+            <h3 prevod-sr="Stranice" prevod-en="Pages">Stranice</h3>
+<ul>
+    <li><a href="index.html" prevod-sr="Početna" prevod-en="Home">Početna</a></li>
+    <li><a href="proizvodi.html" prevod-sr="Proizvodi" prevod-en="Proizvodi">Planovi</a></li>
+    <li><a href="politika-privatnosti.html" prevod-sr="Politika privatnosti" prevod-en="Privacy Policy">Politika privatnosti</a></li>
+    <li><a href="politika-koriscenja.html" prevod-sr="Politika korišćenja" prevod-en="Terms of Use">Politika korišćenja</a></li>
+</ul>
+
+        </div>
+    </div>
+
+    <div class="kontakt-forma">
+    <h3 prevod-sr="Ako imaš neka pitanja, slobodno me kontaktiraj!" prevod-en="If you have any questions, feel free to contact me!">
+        Ako imaš neka pitanja, slobodno me kontaktiraj!
+    </h3>
+    <form method="POST">
+        <input type="text" name="ime" placeholder="Ime" required>
+        <input type="text" name="prezime" placeholder="Prezime" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="poruka" placeholder="Poruka" required></textarea>
+        <button type="submit" prevod-sr="Pošalji poruku" prevod-en="Send Message">Pošalji poruku</button>
+    </form>
+</div>
+
+</footer>
+
+    <script src="skripta.js"></script> 
+    
+</body>
+</html>

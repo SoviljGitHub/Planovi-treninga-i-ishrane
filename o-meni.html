@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Merliness nudi personalizovane planove treninga bazirane na calisthenics metodi – za snagu, definiciju i zdrav stil života.">
+    <title>Merliness | Calisthenics planovi za snagu i definiciju</title>
+    <link rel="stylesheet" href="o-meni.css">
+    <link rel="icon" type="image/ico" href="logo-merliness.ico">
+</head>
+<body>
+
+    <!-- VRATI SVE NAZAD NA PREKIDACCCC -->
+  <nav class="navigacioni-bar">
+    <div class="logo">
+        <a href="index.html">
+            <img src="logo-merliness.avif" alt="Merliness Logo" />
+        </a>
+    </div>
+
+    <button class="hamburger" onclick="prikaziMeni()" aria-label="Otvori meni">☰</button>
+
+    <ul class="navigacioni-linkovi" id="meni" >
+        <li><a href="index.html" prevod-sr="Početna" prevod-en="Home" >Početna</a></li>
+        <li><a href="o-meni.html" prevod-sr="O meni" prevod-en="About me">O meni</a></li>
+        
+
+        <li class="padajuci-meni" id="dugmeProdavnica">
+            <a href="#"  prevod-sr="Planovi ▼" prevod-en="Plans ▼">Planovi ▼</a>
+            <ul class="padajuci-meni-sadrzaj" id="meniProdavnica">
+                <li><a href="zimski-plan.html" prevod-sr="Zimski plan" prevod-en="Winter plan" >Zimski plan</a></li>
+                <li><a href="leto-plan.html" prevod-sr="Letnji plan" prevod-en="Summer plan">Letnji plan</a></li>
+                <li><a href="ruski-zgib.html" prevod-sr="Ruski zgib" prevod-en="Russian pull-up">Ruski zgib</a></li>
+                <li><a href="letnji-ruski-plan.html" prevod-sr="Ruski + letnji" prevod-en="Russian + summer">Ruski + letnji</a></li>
+                <li><a href="hibridni-plan.html" prevod-sr="Hibridni plan" prevod-en="Hybrid plan">Hibridni plan</a></li>
+            </ul>
+        </li>
+         <li><a href="proizvodi.html" prevod-sr="Proizvodi" prevod-en="Products">Proizvodi</a></li>
+        <li><a href="kontakt.html" prevod-sr="Kontakt" prevod-en="Contact">Kontakt</a></li> 
+    </ul>
+</nav>
+
+ <div class="izbor-jezika">
+    <select onchange="promeniJezik(this)">
+      <option value="sr" selected>🇷🇸 Srpski</option>
+      <option value="en">🇬🇧 English</option>
+    </select>
+    <button id="prekidac" class="prekidac-teme" prevod-sr="🌓 Tema" prevod-en="🌓 Theme">🌓 Tema</button>
+    <!-- Dugmad za kontrolu fonta -->
+    <div class="kontrola-fonta">
+        <button id="umanji-font">A−</button>
+        <button id="povecaj-font">A+</button>
+    </div>
+  </div>
+
+   <section class="kontejner-o-meni" id="o-meni"> <!-- Dodat ID ovde -->
+        <div class="slika-o-meni">
+            <img src="merlin-o-meni.jpeg" alt="MerliNess o meni">
+        </div>
+        <div class="tekst-o-meni">
+            <h2 prevod-sr="Ko je MerliNess?" prevod-en="Who is Merliness?"> Ko je MerliNess?</h2>
+            <p prevod-sr="Ja sam neko ko je do svoje 17. godine živeo kao većina ljudi – gubio vreme na aktivnosti koje nisu doprinosile mom razvoju, kao što su video igre, gledanje neprosvetljujućih videa na YouTube-u (jer tada još nije postojao TikTok), i provodio noći u klubovima. Bio sam stidljiv, bez samopouzdanja, a dani su mi prolazili bez jasnog cilja." prevod-en="I'm someone who lived like most people until I was 17 - wasting my time on activities that didn't contribute to my development, like playing video games, watching unenlightening videos on YouTube (because there was no TikTok back then), and spending nights in clubs. I was shy, lacking confidence, and my days passed without a clear goal.">
+                Ja sam neko ko je do svoje 17. godine živeo kao većina ljudi – gubio vreme na aktivnosti koje nisu doprinosile mom razvoju, kao što su video igre, gledanje neprosvetljujućih videa na YouTube-u (jer tada još nije postojao TikTok), i provodio noći u klubovima. Bio sam stidljiv, bez samopouzdanja, a dani su mi prolazili bez jasnog cilja.
+            </p>
+            <p prevod-sr="Međutim, sve se promenilo kada sam sa 18 godina odlučio da preuzmem kontrolu nad svojim životom. Posvetio sam se razvoju samog sebe, postavljanju ciljeva koje ranije nisam ni razmišljao da ostvarim, i najvažnije – sticanju discipline." prevod-en="However, everything changed when, at the age of 18, I decided to take control of my life. I devoted myself to developing myself, setting goals that I had never even thought of achieving before, and most importantly - gaining discipline."> 
+                Međutim, sve se promenilo kada sam sa 18 godina odlučio da preuzmem kontrolu nad svojim životom. Posvetio sam se razvoju samog sebe, postavljanju ciljeva koje ranije nisam ni razmišljao da ostvarim, i najvažnije – sticanju discipline.
+            </p>
+            <p prevod-sr="Danas želim da podelim to iskustvo i pomognem i tebi da postigneš promene koje želiš u svom životu. Ako si spreman da uložiš trud i energiju, tu sam da ti pomognem da ostvariš svoje ciljeve!" prevod-en="Today I want to share that experience and help you achieve the changes you want in your life. If you are ready to invest effort and energy, I am here to help you achieve your goals!">
+                Danas želim da podelim to iskustvo i pomognem i tebi da postigneš promene koje želiš u svom životu. Ako si spreman da uložiš trud i energiju, tu sam da ti pomognem da ostvariš svoje ciljeve!
+            </p>
+        </div>
+    </section>
+
+  <footer>
+    <div class="futer-kontejner">
+        <!-- Prva kolona: Merliness -->
+        <div class="futer-kolona">
+            <h2>Merliness</h2>
+            <a href="index.html">
+            <img src="logo-merliness.avif" alt="Merliness Logo">
+            </a>
+            <p>All rights reserved &copy;2025 Merliness</p>
+        </div>
+
+        <!-- Druga kolona: Društvene mreže -->
+        <div class="futer-kolona">
+            <h3 prevod-sr="Društvene mreže" prevod-en="Social networks" >Društvene mreže</h3>
+            <ul>
+                <li><a href="https://www.instagram.com/merli.ness?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a></li>
+                <li><a href="https://www.tiktok.com/@merli.ness?is_from_webapp=1&sender_device=pc" target="_blank">Tiktok</a></li>
+                <li><a href="https://youtube.com/@merliness?si=HnaK_U0tzvGo19pr" target="_blank">Youtube</a></li>
+            </ul>            
+        </div>
+
+        <!-- Treća kolona: Linkovi -->
+        <div class="futer-kolona">
+            <h3 prevod-sr="Linkovi" prevod-en="Links">Linkovi</h3>
+            <ul>
+                <li><a href="index.html#o-meni" prevod-sr="O meni" prevod-en="About me">O meni</a></li>
+                <li><a href="shop.html" prevod-sr="Planovi" prevod-en="Plans">Planovi</a></li>
+                <li><a href="index.html#pitanja" prevod-sr="Najčešća pitanja" prevod-en="FAQ">Najčešća pitanja</a></li>
+                <li><a href="kontakt.html" prevod-sr="Kontakt" prevod-en="Contact">Kontakt</a></li> 
+            </ul>
+        </div>
+
+        <!-- Četvrta kolona: Stranice -->
+        <div class="futer-kolona">
+            <h3 prevod-sr="Stranice" prevod-en="Pages">Stranice</h3>
+<ul>
+    <li><a href="index.html" prevod-sr="Početna" prevod-en="Home">Početna</a></li>
+    <li><a href="shop.html" prevod-sr="Shop" prevod-en="Shop">Shop</a></li>
+    <li><a href="politika-privatnosti.html" prevod-sr="Politika privatnosti" prevod-en="Privacy Policy">Politika privatnosti</a></li>
+    <li><a href="politika-koriscenja.html" prevod-sr="Politika korišćenja" prevod-en="Terms of Use">Politika korišćenja</a></li>
+</ul>
+
+        </div>
+    </div>
+
+    <!-- Kontakt forma -->
+    <div class="kontakt-forma">
+    <h3 prevod-sr="Ako imaš neka pitanja, slobodno me kontaktiraj!" prevod-en="If you have any questions, feel free to contact me!">
+        Ako imaš neka pitanja, slobodno me kontaktiraj!
+    </h3>
+    <form method="POST">
+        <input type="text" name="ime" placeholder="Ime" required>
+        <input type="text" name="prezime" placeholder="Prezime" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="poruka" placeholder="Poruka" required></textarea>
+        <button type="submit" prevod-sr="Pošalji poruku" prevod-en="Send Message">Pošalji poruku</button>
+    </form>
+</div>
+
+</footer>
+
+  <script src="skripta.js"></script> 
+
+  </body>
+</html>

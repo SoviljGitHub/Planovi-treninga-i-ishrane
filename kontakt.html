@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kontaktirajte nas putem adrese, telefona ili elektronske pošte. Pronađite našu lokaciju na mapi i slobodno nam postavite pitanje.">
+    <meta name="keywords" content="trening, ishrana, plan preživljavanja, kontakt, mentorstvo, izazovi, merliness, online fitnes plan">
+    <title> Kontakt stranica – Trening, ishrana, mentorstvo | Merliness</title>
+    <link rel="stylesheet" href="kontakt.css">
+    <link rel="icon" type="image/ico " href="logo-merliness.ico">
+</head>
+<body>
+    <nav class="navigacioni-bar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="logo-merliness.avif" alt="Merliness Logo" />
+            </a>
+        </div>
+
+        <button class="hamburger" onclick="prikaziMeni()">☰</button>
+
+        <ul class="navigacioni-linkovi" id="meni">
+            <li><a href="index.html" prevod-sr="Početna" prevod-en="Home">Početna</a></li>
+            <li><a href="o-meni.html" prevod-sr="O meni" prevod-en="About me">O meni</a></li>
+            <li><a href="proizvodi.html" prevod-sr="Proizvodi" prevod-en="Products">Proizvodi</a></li> 
+            <li><a href="kontakt.html" prevod-sr="Kontakt" prevod-en="Contact">Kontakt</a></li> 
+        </ul>
+
+    </nav>
+
+    <div class="kontrole">
+    <button id="prekidac" class="prekidac-teme" prevod-sr="🌓 Tema" prevod-en="🌓 Theme">🌓 Tema</button>
+
+    <div class="kontrola-fonta">
+        <button id="umanji-font">A−</button>
+        <button id="povecaj-font">A+</button>
+    </div>
+
+    <div class="izbor-jezika">
+        <select onchange="promeniJezik(this)">
+            <option value="sr" selected>🇷🇸 Srpski</option>
+            <option value="en">🇬🇧 English</option>
+        </select>
+    </div>
+</div>
+
+    <main class="kontakt-kontejner">
+        <section class="kontakt-info">
+
+            <div class="kontakt-item">
+                <img src="adresa.png" class="info-slike" alt="Adresa">
+                <h2 prevod-sr="Adresa" prevod-en="Address">Adresa</h2>
+                <p class="adresa-naziv">Ulica Kneza Miloša 5, Beograd</p>
+            </div>
+
+            <div class="kontakt-item">
+                <img src="telefon.png" class="info-slike" alt="Telefon">
+                <h2 prevod-sr="Telefon " prevod-en="Telephone">Telefon</h2>
+                <p class="telefon-broj">+381 11 123 4567</p>
+            </div>
+
+            <div class="kontakt-item">
+                <img src="imejl.png" class="info-slike" alt="Imejl">
+                <h2 prevod-sr="Imejl " prevod-en="Email">Imejl</h2>
+                <p class="imejl-adresa">mn9660611@gmail.com</p>
+            </div>
+
+        </section>
+
+        <section class="kontakt-mapa">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.176241112239!2d20.463203715592476!3d44.817631479098985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a65ac08f7e909%3A0x4aeaa8f7d9b6f99a!2sKneza%20Milo%C5%A1a%205%2C%20Beograd!5e0!3m2!1ssr!2srs!4v1696032000000!5m2!1ssr!2srs"
+                width="100%"
+                height="350"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+
+        <section class="kontakt-poruka">
+            <h3 prevod-sr="Postavite pitanje" prevod-en="Ask a question" >Postavite pitanje</h3>
+            <p prevod-sr="U futeru se nalazi kontakt forma gde možete postaviti bilo kakvo pitanje." prevod-en="In the footer there is a contact form where you can ask any question." >U futeru se nalazi kontakt forma gde možete postaviti bilo kakvo pitanje.</p>
+        </section>
+    </main>
+
+    <footer>
+    <div class="futer-kontejner">
+        <div class="futer-kolona">
+            <h2>Merliness</h2>
+            <a href="index.html">
+            <img src="logo-merliness.avif" alt="Merliness Logo">
+            </a>
+            <p>All rights reserved &copy;2025 Merliness</p>
+        </div>
+
+        <div class="futer-kolona">
+            <h3 prevod-sr="Društvene mreže" prevod-en="Social networks" >Društvene mreže</h3>
+            <ul>
+                <li><a href="https://www.instagram.com/merli.ness?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a></li>
+                <li><a href="https://www.tiktok.com/@merli.ness?is_from_webapp=1&sender_device=pc" target="_blank">Tiktok</a></li>
+                <li><a href="https://youtube.com/@merliness?si=HnaK_U0tzvGo19pr" target="_blank">Youtube</a></li>
+            </ul>            
+        </div>
+
+        <div class="futer-kolona">
+            <h3 prevod-sr="Linkovi" prevod-en="Links">Linkovi</h3>
+            <ul>
+                <li><a href="o-meni.html" prevod-sr="O meni" prevod-en="About me">O meni</a></li>
+                <li><a href="index.html#pitanja" prevod-sr="Najčešća pitanja" prevod-en="FAQ">Najčešća pitanja</a></li>
+                <li><a href="kontakt.html" prevod-sr="Kontakt" prevod-en="Contact">Kontakt</a></li> 
+            </ul>
+        </div>
+
+        <div class="futer-kolona">
+            <h3 prevod-sr="Stranice" prevod-en="Pages">Stranice</h3>
+<ul>
+    <li><a href="index.html" prevod-sr="Početna" prevod-en="Home">Početna</a></li>
+    <li><a href="proizvodi.html" prevod-sr="Planovi" prevod-en="Products">Planovi</a></li>
+    <li><a href="politika-privatnosti.html" prevod-sr="Politika privatnosti" prevod-en="Privacy Policy">Politika privatnosti</a></li>
+    <li><a href="politika-koriscenja.html" prevod-sr="Politika korišćenja" prevod-en="Terms of Use">Politika korišćenja</a></li>
+</ul>
+
+        </div>
+    </div>
+
+    <div class="kontakt-forma">
+    <h3 prevod-sr="Ako imaš neka pitanja, slobodno me kontaktiraj!" prevod-en="If you have any questions, feel free to contact me!">
+        Ako imaš neka pitanja, slobodno me kontaktiraj!
+    </h3>
+    <form method="POST">
+        <input type="text" name="ime" placeholder="Ime"  required>
+        <input type="text" name="prezime" placeholder="Prezime"  required>
+        <input type="email" name="email" placeholder="Email"  required>
+        <textarea name="poruka" placeholder="Poruka" required></textarea>
+        <button type="submit" prevod-sr="Pošalji poruku" prevod-en="Send Message">Pošalji poruku</button>
+    </form>
+</div>
+
+</footer>
+
+    <script src="skripta.js"></script> 
+
+</body>
+</html>

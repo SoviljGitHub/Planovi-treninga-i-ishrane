@@ -1,0 +1,844 @@
+.navigacioni-bar { 
+    top: 0;  
+    left: 0;
+    width: 88%;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #181818;
+    padding: 15px 50px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;  
+    margin-bottom: 20px;
+    margin-left: 23px;
+}
+
+
+.logo img {
+    height: 80px;  
+    width: auto;   
+    transition: 0.3s;
+    margin-left: 30px;
+}
+
+.navigacioni-linkovi {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.navigacioni-linkovi li {
+    display: inline-block;
+}
+
+.navigacioni-linkovi a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.125rem;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: 0.3s ease-in-out;
+    position: relative;
+}
+
+.navigacioni-linkovi a:hover {
+    color: #f8b400;
+    transform: scale(1.1);
+}
+
+.navigacioni-linkovi a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: #f8b400;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease-in-out;
+}
+
+.navigacioni-linkovi a:hover::after {
+    width: 100%;
+}
+
+.kontrola-fonta button {
+    margin: 0 5px;
+    padding: 6px 12px;
+    font-size: 1rem;
+    border: 2px solid #ffcc00;
+    border-radius: 6px;
+    background-color: #f0f0f0;
+    color: #000000;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.kontrola-fonta button:hover {
+    background-color: #e6b800;
+    color: white;
+}
+
+.kontrole {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 10px 50px; 
+}
+
+.izbor-jezika {
+  position: static; 
+  margin-top: -8px;
+}
+
+.izbor-jezika select {
+  padding: 8px 12px;
+  font-size: 0.875rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+}
+
+
+body {
+    font-family: 'Arial Black', sans-serif;
+    background-color: #f4f4f4;
+    padding: 0px;
+}
+
+.proizvod-kontejner {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.proizvod-slika {
+    flex: 1;
+    padding: 20px;
+}
+
+.proizvod-slika img {
+    max-width: 700%;
+    border-radius: 10px;
+    height: 500px; 
+    object-fit: cover; 
+}
+
+.detalji-o-proizvodu {
+    flex-direction: column; 
+    align-items: center;
+    margin-right: 130px;
+}
+
+.logo-slika {
+  display: block;
+  margin: 20px -50px 0 auto;
+  height: auto;
+  max-width: 100%;
+}
+
+.dugme-poruci {
+    font-size: 1.8em; 
+    font-weight: 700; 
+    letter-spacing: 1px; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+    width: 300px; 
+    height: 50px; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    margin-top: 10px;
+    margin-left: 270px;
+    background: linear-gradient(135deg, #27ae60, #2ecc71);
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 2px 4px 10px rgba(39, 174, 96, 0.4);
+    border: none;
+}
+
+.dugme-poruci:hover {
+    background: linear-gradient(135deg, #2ecc71, #27ae60);
+    transform: scale(1.08);
+    box-shadow: 3px 6px 15px rgba(39, 174, 96, 0.6);
+}
+
+.cena-proizvod {
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: auto;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    border-radius: 8px;
+    background: linear-gradient(to right, #444, #222);
+    border: 2px solid #a0a0a0;
+    color: #fff;
+    margin-left: 260px;
+}
+
+
+.cena-naziv {
+    margin-left: 15px;
+    font-size: 1.5em;
+    
+}
+
+.regularna-cena {
+    font-size: 1.2em;
+    color: white;
+   
+}
+
+.informacioni-kontejner {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+.informacija1 {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+    text-transform: uppercase;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.informacija2 {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+    text-transform: uppercase;
+    margin-right: -100px;
+    margin-top: 50px;
+}
+
+.dodatna-informacija ul {
+    list-style-type: none;
+}
+
+.dodatna-informacija li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.dodatna-informacija img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.futer {
+    background: #dcdada; 
+    padding: 30px 0;
+    text-align: center;
+    color: #fff;
+    margin-top: 40px;
+}
+
+.metode-placanja {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; 
+    margin-bottom: 20px;
+}
+
+.ikonice-placanja {
+    height: 50px; 
+    width: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.ikonice-placanja:hover {
+    transform: scale(1.1);
+}
+
+.ikonice-drustvene-mreze {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.ikonica-drustvene-mreze {
+    height: 40px;
+    width: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.ikonica-drustvene-mreze:hover {
+    transform: scale(1.2);
+}
+
+.futer-logo {
+    margin-top: 20px;
+}
+
+.logo-futer {
+    height: 100px; 
+    width: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo-futer:hover {
+    transform: scale(1.1);
+}
+
+.prekidac-teme {
+    background-color: transparent;
+    border: 2px solid #f8b400;
+    color: #f8b400;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.prekidac-teme:hover {
+    background-color: #f8b400;
+    color: #181818;
+}
+
+body.tamni-režim {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+body.tamni-režim .navigacioni-linkovi {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+body.tamni-režim .navigacioni-linkovi li {
+    display: inline-block;
+}
+
+body.tamni-režim .navigacioni-linkovi a {
+    text-decoration: none;
+    color: #80b3ff;
+    font-size: 1.125rem;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: 0.3s ease-in-out;
+    position: relative;
+    white-space: nowrap;
+}
+
+body.tamni-režim .navigacioni-linkovi a:hover {
+    color: #aaddff;
+    transform: scale(1.1);
+}
+
+body.tamni-režim .navigacioni-linkovi a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: #80b3ff;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease-in-out;
+}
+
+body.tamni-režim .navigacioni-linkovi a:hover::after {
+    width: 100%;
+}
+
+body.tamni-režim .prekidac-teme {
+    background-color: transparent;
+    border: 2px solid #80b3ff;
+    color: #80b3ff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-left: 20px;
+}
+
+body.tamni-režim .prekidac-teme:hover {
+    background-color: #80b3ff;
+    color: #181818;
+}
+
+
+body.tamni-režim .navigacioni-bar {
+    background: #1e1e1e;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+ body.tamni-režim .kontrola-fonta button {
+    margin: 0 5px;
+    padding: 6px 12px;
+    font-size: 1rem;
+    border: 2px solid #0066cc;
+    border-radius: 6px;
+    background-color: #f0f0f0;
+    color: #0066cc;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.tamni-režim .kontrola-fonta button:hover {
+    background-color: #0066cc;
+    color: white;
+}
+
+body.tamni-režim .proizvod-kontejner,
+body.tamni-režim .informacioni-kontejner {
+    background-color: #1c1c1c;
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.05);
+}
+
+body.tamni-režim .cena-proizvod {
+    background: linear-gradient(to right, #555, #333);
+    border: 2px solid #666;
+    color: #fff;
+}
+
+body.tamni-režim .dugme-poruci {
+    background: linear-gradient(135deg, #145a32, #1e8449);
+    color: #fff;
+    box-shadow: 2px 4px 10px rgba(20, 90, 50, 0.4);
+}
+
+body.tamni-režim .dugme-poruci:hover {
+    background: linear-gradient(135deg, #1e8449, #145a32);
+    box-shadow: 3px 6px 15px rgba(20, 90, 50, 0.6);
+}
+
+body.tamni-režim .informacija1,
+body.tamni-režim .informacija2 {
+    color: #f0f0f0;
+}
+
+body.tamni-režim .dodatna-informacija li {
+    color: #e0e0e0;
+}
+
+body.tamni-režim .futer {
+    background: #1a1a1a;
+    color: #f0f0f0;
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+
+@media (max-width: 600px) {
+ .navigacioni-bar {
+    flex-direction: column;
+    padding: 10px 20px;
+    position: relative;
+    margin: 0;         
+    align-items: flex-start
+  }
+
+  .logo img {
+    height: 60px;
+    margin-left: 0;
+  }
+
+  .kontrole {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  
+  gap: 0.5rem;             
+  margin: 15px 20px;
+}
+
+.kontrole button,
+.kontrole select {
+    margin-bottom: 5px;
+  flex: 0 1 auto;      
+  width: auto;           
+  max-width: 200px;      
+  padding: 8px 12px;     
+  font-size: 0.9rem;     
+}
+
+.kontrole .prekidac-teme {
+  order: -1;           
+  background: none;      
+  border: 2px solid #ffcc00;
+  color: #ffcc00;
+  border-radius: 4px;
+}
+
+.kontrole select {
+    margin-top:7px ;
+  border: 2px solid #ffcc00;
+  border-radius: 4px;
+  background: #fff;
+  color: #000;
+}
+
+.hamburger {
+    display: block;
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  .navigacioni-linkovi {
+    width: 90vw;
+    left: 20px;
+    right: 10px;
+    position: fixed;
+    top: 80px;
+    bottom: 0;
+    display: none;
+    flex-direction: column;
+    padding: 12px 0;
+    z-index: 1000;
+    background: rgba(24, 24, 24, 0.7);
+  }
+  .navigacioni-linkovi.prikazano {
+    display: flex;
+  }
+  .navigacioni-linkovi li {
+    margin: 0.5rem 0;
+  }
+  .navigacioni-linkovi li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  html.bez-skrolovanja,
+  body.bez-skrolovanja {
+    overflow: hidden !important;
+  }
+  
+
+  .dugme-poruci,
+  .logo-slika,
+  .cena-proizvod {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .proizvod-kontejner,
+  .informacioni-kontejner {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .detalji-o-proizvodu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    margin-right: 0; 
+  }
+
+ 
+  .proizvod-slika img {
+    height: auto;
+    width: 100%;
+  }
+
+  .informacija1,
+  .informacija2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+
+ body.tamni-režim .navigacioni-linkovi {
+   width: 90vw;
+    left: 20px;
+    right: 10px;
+    position: fixed;
+    top: 80px;
+    bottom: 0;
+    display: none;
+    flex-direction: column;
+    padding: 12px 0;
+    z-index: 1000;
+    background: rgba(24, 24, 24, 0.7);
+  }
+ body.tamni-režim .navigacioni-linkovi.prikazano {
+    display: flex;
+  }
+ body.tamni-režim  .navigacioni-linkovi li {
+    margin: 0.5rem 0;
+  }
+  body.tamni-režim .navigacioni-linkovi li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #80b3ff;
+    text-decoration: none;
+
+  }
+   body.tamni-režim .kontrole {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 0.5rem;              
+  margin: 15px 20px;
+}
+
+ body.tamni-režim .kontrole button,
+ body.tamni-režim .kontrole select {
+  flex: 0 1 auto;        
+  width: auto;           
+  max-width: 200px;     
+  padding: 8px 12px;     
+  font-size: 0.9rem;   
+  border: 2px solid #80b3ff;
+}
+
+ body.tamni-režim .kontrole .prekidac-teme {
+  order: -1;           
+  background: none;     
+  border: 2px solid  #80b3ff;
+  color:  #80b3ff;
+  border-radius: 4px;
+}
+
+ body.tamni-režim .kontrole select {
+  margin-top: 10px;
+  border: 2px solid  #0066cc;
+  border-radius: 4px;
+  background: #fff;
+  color: #000;
+}
+}
+
+
+@media (min-width: 601px) and (max-width: 1200px) {
+
+  html, body {
+  overflow-x: hidden;
+}
+
+  .navigacioni-bar {
+    display: flex;
+    align-items: center;
+    padding: 12px 30px;
+    position: relative; 
+  }
+
+  .logo {
+    align-self: flex-start;
+    margin-left: 0;
+  }
+
+ .logo img {
+    height: 70px;
+    margin-left: 0;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  .navigacioni-linkovi {
+    width: 90vw;
+    position: fixed;
+     top: 90px;                   
+    left: 50px;                 
+    right: 50px;                 
+    bottom: 0;
+    display: none;
+    flex-direction: column;
+    padding: 12px 0;
+    z-index: 1000;
+    background: rgba(24, 24, 24, 0.8);
+  }
+  .navigacioni-linkovi.prikazano {
+    display: flex;
+  }
+  .navigacioni-linkovi li {
+    margin: 0.5rem 0;
+  }
+  .navigacioni-linkovi li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  html.bez-skrolovanja,
+  body.bez-skrolovanja {
+    overflow: hidden !important;
+  }
+
+   .kontrole {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  
+    align-items: center;
+    gap: 1rem;
+    margin: 10px 20px; 
+  }
+  .kontrole button {  
+    margin-bottom: 5px; 
+    width: auto;
+    max-width: 200px;
+    padding: 8px 12px;
+    font-size: 0.95rem;
+  }
+
+  .kontrole select {  
+    margin-top: 10px;
+    width: auto;
+    max-width: 200px;
+    padding: 8px 12px;
+    font-size: 0.95rem;
+  }
+
+  .proizvod-kontejner {
+    display: flex;         
+    flex-direction: row;    
+    padding: 15px;
+    gap: 20px;             
+  }
+
+    .proizvod-slika {
+    width: 100%;
+    height: auto;
+    max-height: 500px; 
+    overflow: hidden;
+  }
+
+  .proizvod-slika img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+    border-radius: 10px;
+  }
+
+  .detalji-o-proizvodu {
+    flex: 1 1 50%;         
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 0;
+    max-width: 50%;
+  }
+
+   body.tamni-režim .kontrole {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+    gap: 1rem;
+    margin: 10px 20px;
+  }
+   body.tamni-režim .kontrole button {
+    border: 2px solid  #0066cc;
+    margin-bottom: 5px;
+    width: auto;
+    max-width: 200px;
+    padding: 8px 12px;
+    font-size: 0.95rem;
+  }
+
+   body.tamni-režim .kontrole select {
+    margin-top: 10px;
+    width: auto;
+    max-width: 200px;
+    padding: 8px 12px;
+    font-size: 0.95rem;
+   }
+
+  .dugme-poruci,
+  .logo-slika,
+  .cena-proizvod {
+    width: 80%;
+    margin: 10px auto;
+    font-size: 1.1em;
+  }
+
+ .promotivni-tekst {
+  font-size: 1.2em;
+  margin: 10px auto;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+  .informacija1,
+  .informacija2 {
+    font-size: 1.5em;
+  }
+
+  body.tamni-režim .navigacioni-linkovi {
+    width: 90vw;
+    position: fixed;
+     top: 90px;                   
+    left: 50px;                
+    right: 50px;                
+    bottom: 0;
+    display: none;
+    flex-direction: column;
+    padding: 12px 0;
+    z-index: 1000;
+    background: rgba(24, 24, 24, 0.8);
+  }
+  body.tamni-režim .navigacioni-linkovi.prikazano {
+    display: flex;
+  }
+  body.tamni-režim .navigacioni-linkovi li {
+    margin: 0.5rem 0;
+  }
+  body.tamni-režim .navigacioni-linkovi li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #80b3ff;
+    text-decoration: none;
+  }
+}

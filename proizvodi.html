@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="keywords" content="hibridni plan, ishrana, ruski zgib, plan preživljavanja, zima, leto, mentorstvo, izazovi, merliness, online fitnes plan">
+    <title> Zimski plan preživljavanja – Trening, ishrana, mentorstvo | Merliness</title>
+    <link rel="stylesheet" href="proizvodi.css">
+    <link rel="icon" type="image/ico" href="logo-merliness.ico">
+</head>
+<body>
+
+    <nav class="navigacioni-bar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="logo-merliness.avif" alt="Merliness Logo" />
+            </a>
+           
+        </div>
+
+         <button class="hamburger" onclick="prikaziMeni()">☰</button>
+
+        <ul class="navigacioni-linkovi"  id="meni">
+            <li><a href="index.html" prevod-sr="Početna" prevod-en="Home">Početna</a></li>
+            <li><a href="o-meni.html" prevod-sr="O meni" prevod-en="About me">O meni</a></li>
+            <li><a href="proizvodi.html" prevod-sr="Prozivodi" prevod-en="Products">Proizvodi</a></li>
+            <li><a href="kontakt.html" prevod-sr="Kontakt" prevod-en="Contact">Kontakt</a></li> 
+        </ul>
+
+        
+
+    </nav>
+         <div class="kontrole">
+    <button id="prekidac" class="prekidac-teme" prevod-sr="🌓 Tema" prevod-en="🌓 Theme">🌓 Tema</button>
+
+    <div class="kontrola-fonta">
+        <button id="umanji-font">A−</button>
+        <button id="povecaj-font">A+</button>
+    </div>
+
+    <div class="izbor-jezika">
+        <select onchange="promeniJezik(this)">
+            <option value="sr" selected>🇷🇸 Srpski</option>
+            <option value="en">🇬🇧 English</option>
+        </select>
+    </div>
+</div>
+
+    
+    <div class="proizvodi">
+        <div class="stavka-proizvoda">
+            <img src="zimsko-prezivljavanje.jpg" alt="Plan Zimsko preživljavanje" class="slika-proizvoda">
+            <h3 class="ime-proizvoda" prevod-sr="Zimsko preživljavanje" prevod-en="Winter survival"> Zimsko preživljavanje</h3>
+            <p class="cena-proizvoda"> 19€ </p>
+            <a href="zimski-plan.html" class="dugme" prevod-sr="Uzmi plan" prevod-en="Get a plan" >Uzmi plan</a>
+        </div>
+    
+        <div class="stavka-proizvoda">
+            <img src="iskuj-telo.jpg" alt="Iskuj telo plan" class="slika-proizvoda">
+            <h3 class="ime-proizvoda" prevod-sr="Iskuj telo"prevod-en="Forge the body">  Iskuj telo</h3>
+            <p class="cena-proizvoda"> 25€ </p>
+            <a href="leto-plan.html" class="dugme" prevod-sr="Uzmi plan" prevod-en="Get a plan">Uzmi plan</a>
+        </div>
+    
+        <div class="stavka-proizvoda">
+            <img src="ruski-zgib.jpg" alt="Ruski zgib plan" class="slika-proizvoda">
+            <h3 class="ime-proizvoda" prevod-sr="Ruski zgib" prevod-en="Russian pull-up"> Ruski zgib</h3>
+            <p class="cena-proizvoda"> 8€ </p>
+            <a href="ruski-zgib.html" class="dugme" prevod-sr="Uzmi plan" prevod-en="Get a plan">Uzmi plan</a>
+        </div>
+    
+        <div class="stavka-proizvoda">
+            <img src="iskuj-telo-i-ruski.jpg" alt="Iskuj + ruski plan" class="slika-proizvoda">
+            <h3 class="ime-proizvoda" prevod-sr="Iskuj telo + ruski zgib" prevod-en="Forge the body + Russian pull-up"> Iskuj telo + ruski zgib</h3>
+            <p class="cena-proizvoda"> 24€ </p>
+            <a href="letnji-ruski-plan.html" class="dugme" prevod-sr="Uzmi plan" prevod-en="Get a plan">Uzmi plan</a>
+        </div>
+    
+        <div class="stavka-proizvoda">
+            <img src="hibridni-plan.jpg" alt="Hibridni plan" class="slika-proizvoda">
+            <h3 class="ime-proizvoda" prevod-sr="Hibridni plan" prevod-en="Hybrid plan">Hibridni plan</h3>
+            <p class="cena-proizvoda"> 30€ </p>
+            <a href="hibridni-plan.html" class="dugme" prevod-sr="Uzmi plan" prevod-en="Get a plan">Uzmi plan</a>
+        </div>
+    </div>
+    
+    <footer class="futer">
+        <div class="metode-placanja">
+        <img src="američka-ekspresna-kartica.png" alt="Americka ekspresna kartica" class="ikonice-placanja">
+        <img src="dina-kartica.png" alt="Dina" class="ikonice-placanja">
+        <img src="viza-kartica.png" alt="Viza" class="ikonice-placanja">
+        <img src="master-kartica.png" alt="Master" class="ikonice-placanja">
+        <img src="maestro-kartica.png" alt="Maestro" class="ikonice-placanja">
+        <img src="banka-inteza.png" alt="Banka Inteza" class="ikonice-placanja">
+        <img src="master-kartica-sigurnosni-kod.png" alt="Master sigurnosni kod" class="ikonice-placanja">
+        <img src="visa-bezbednosna-usluga.png" alt="Viza bezbedonosna usluga" class="ikonice-placanja">
+        <img src="pejpal-logo.png" alt="Pejpal" class="ikonice-placanja">
+    </div>
+
+    <div class="ikonice-drustvene-mreze">
+        <a href="https://www.instagram.com/merli.ness?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+            <img src="instagram.png" alt="Instagram" class="ikonica-drustvene-mreze">
+        </a>
+        <a href="https://www.tiktok.com/@merli.ness?is_from_webapp=1&sender_device=pc" target="_blank">
+            <img src="tik-tok.png" alt="TikTok" class="ikonica-drustvene-mreze">
+        </a>
+        <a href="http://www.youtube.com/@merliness" target="_blank">
+            <img src="jutjub.png" alt="YouTube" class="ikonica-drustvene-mreze">
+        </a>
+    </div> 
+    
+        <div class="futer-logo">
+            <a href="index.html">
+            <img src="logo-merliness.avif" alt="Logo" class="logo-futer">
+            </a>
+        </div>
+    </footer>
+
+    <script src="skripta.js"></script> 
+    
+</body>
+</html>
+

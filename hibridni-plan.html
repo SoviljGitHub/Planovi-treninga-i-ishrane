@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hibridni plan: street workout + teretana, za 6–8 nedelja. Poboljšanje snage, izdržljivosti i mišićne mase uz podršku mentora.">
+    <title>Hibridni plan – Trening, ishrana, mentorstvo | Merliness</title>
+    <link rel="stylesheet" href="hibridni-plan.css">
+    <link rel="icon" type="image/ico" href="logo-merliness.ico">
+</head>
+<body>
+
+    <nav class="navigacioni-bar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="logo-merliness.avif" alt="Merliness Logo" />
+            </a>
+        </div>
+
+        <button class="hamburger" onclick="prikaziMeni()">☰</button>
+
+       <ul class="navigacioni-linkovi" id="meni">
+            <li><a href="index.html" prevod-sr="Početna" prevod-en="Home">Početna</a></li>
+            <li><a href="o-meni.html" prevod-sr="O meni" prevod-en="About me">O meni</a></li>
+            <li><a href="proizvodi.html" prevod-sr="Proizvodi" prevod-en="Products">Proizvodi</a></li>
+            <li><a href="kontakt.html" prevod-sr="Kontakt" prevod-en="Contact">Kontakt</a></li> 
+        </ul>
+    </nav>
+    <div class="kontrole">
+    <button id="prekidac" class="prekidac-teme" prevod-sr="🌓 Tema" prevod-en="🌓 Theme">🌓 Tema</button>
+
+    <div class="kontrola-fonta">
+        <button id="umanji-font">A−</button>
+        <button id="povecaj-font">A+</button>
+    </div>
+
+    <div class="izbor-jezika">
+        <select onchange="promeniJezik(this)">
+            <option value="sr" selected>🇷🇸 Srpski</option>
+            <option value="en">🇬🇧 English</option>
+        </select>
+    </div>
+</div>
+
+    <div class="proizvod-kontejner">
+    
+        <div class="proizvod-slika">
+            <img src="hibridni-plan.jpg" alt="Hibridni plan">
+        </div>
+
+        <div class="detalji-o-proizvodu">
+            <img class="logo-slika" src="hibrid-logo.png" alt="Hibridni plan">
+                <div class="cena-proizvod">
+                    <p class="cena-naziv">
+  <span prevod-sr="CENA:" prevod-en="PRICE:">CENA:</span>
+  <span class="regularna-cena" prevod-sr="30€" prevod-en="30€">30€</span>
+</p>
+                </div>
+                <button type="button" class="dugme-poruci" prevod-sr="Poruči" prevod-en="Order">Poruči</button>
+        </div>
+    </div>
+
+    <div class="informacioni-kontejner">
+    <div class="dodatna-informacija">
+        <h1 class="informacija1" prevod-sr="Šta mogu da očekujem od plana?" prevod-en="What can I expect from the plan?">Šta mogu da očekujem od plana?</h1>
+<ul>
+    <li><img src="ikonica-provera.png" alt="Ikonica"> <span prevod-sr="Poboljšanje repetitivne izdržljivosti" prevod-en="Improvement of repetitive endurance">Poboljšanje repetitivne izdržljivosti</span></li>
+    <li><img src="ikonica-provera.png" alt="Ikonica"> <span prevod-sr="Poboljšanje mišićne mase" prevod-en="Improvement of muscle mass">Poboljšanje mišićne mase</span></li>
+    <li><img src="ikonica-provera.png" alt="Ikonica"> <span prevod-sr="Jačanje mentalne snage i sticanje discipline" prevod-en="Strengthening mental toughness and gaining discipline">Jačanje mentalne snage i sticanje discipline</span></li>
+    <li><img src="ikonica-provera.png" alt="Ikonica"> <span prevod-sr="Poboljšanje maksimalne snage" prevod-en="Improvement of maximal strength">Poboljšanje maksimalne snage</span></li>
+    <li><img src="ikonica-provera.png" alt="Ikonica"> <span prevod-sr="Poboljšanje kondicije" prevod-en="Improvement of conditioning">Poboljšanje kondicije</span></li>
+    <li><img src="ikonica-provera.png" alt="Ikonica"> <span prevod-sr="Jačanje u svim sferama podjednako" prevod-en="Balanced strengthening in all areas">Jačanje u svim sferama podjednako</span></li>
+    <li><img src="ikonica-provera.png" alt="Ikonica"> <span prevod-sr="Lean bulk ili cut" prevod-en="Lean bulk or cut">Lean bulk ili cut</span></li>
+</ul>
+
+<h2 class="informacija2" prevod-sr="Dodatne informacije" prevod-en="Additional Information">Dodatne informacije</h2>
+<ul>
+    <li><img src="ikonica-provera.png" alt="Ikonica"> <span prevod-sr="Nakon kupovine plana, na mejl dobijate testove koje treba da uradite radi izrade personalizovanog treninga." prevod-en="After purchasing the plan, you will receive tests by email that you need to complete in order to create a personalized training.">Nakon kupovine plana, na mejl dobijate testove koje treba da uradite radi izrade personalizovanog treninga.</span></li>
+    <li><img src="ikonica-provera.png" alt="Ikonica"> <span prevod-sr="Plan je kombinacija street workout (calisthenics) vežbi i vežbi u teretani." prevod-en="The plan combines street workout (calisthenics) and gym exercises.">Plan je kombinacija street workout (calisthenics) vežbi i vežbi u teretani.</span></li>
+    <li><img src="ikonica-provera.png" alt="Ikonica"> <span prevod-sr="Dobijate plan koji traje od 6 do 8 nedelja, u zavisnosti od vašeg napretka." prevod-en="You get a plan lasting 6 to 8 weeks, depending on your progress.">Dobijate plan koji traje od 6 do 8 nedelja, u zavisnosti od vašeg napretka.</span></li>
+    <li><img src="ikonica-provera.png" alt="Ikonica"> <span prevod-sr="Pridružujete se Discord grupi gde se vodi mentorstvo." prevod-en="You join a Discord group where mentorship is conducted.">Pridružujete se Discord grupi gde se vodi mentorstvo.</span></li>
+    <li><img src="ikonica-provera.png" alt="Ikonica"> <span prevod-sr="Omogućeno je postavljanje privatnih pitanja i direktan kontakt." prevod-en="You are allowed to ask private questions and have direct contact.">Omogućeno je postavljanje privatnih pitanja i direktan kontakt.</span></li>
+    <li><img src="ikonica-provera.png" alt="Ikonica"> <span prevod-sr="Na kraju 6-8 nedelja, ako budete zadovoljni, dobićete savet za obnavljanje treninga."prevod-en="At the end of 6–8 weeks, if satisfied, you will receive advice for renewing the training plan.">Na kraju 6-8 nedelja, ako budete zadovoljni, dobićete savet za obnavljanje treninga.</span></li>
+</ul>
+
+    </div>
+</div>
+
+<footer class="futer">
+    <div class="metode-placanja">
+        <img src="američka-ekspresna-kartica.png" alt="Americka ekspresna kartica" class="ikonice-placanja">
+        <img src="dina-kartica.png" alt="Dina" class="ikonice-placanja">
+        <img src="viza-kartica.png" alt="Viza" class="ikonice-placanja">
+        <img src="master-kartica.png" alt="Master" class="ikonice-placanja">
+        <img src="maestro-kartica.png" alt="Maestro" class="ikonice-placanja">
+        <img src="banka-inteza.png" alt="Banka Inteza" class="ikonice-placanja">
+        <img src="master-kartica-sigurnosni-kod.png" alt="Master sigurnosni kod" class="ikonice-placanja">
+        <img src="visa-bezbednosna-usluga.png" alt="Viza bezbedonosna usluga" class="ikonice-placanja">
+        <img src="pejpal-logo.png" alt="Pejpal" class="ikonice-placanja">
+    </div>
+
+    <div class="ikonice-drustvene-mreze">
+        <a href="https://www.instagram.com/merli.ness?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+            <img src="instagram.png" alt="Instagram" class="ikonica-drustvene-mreze">
+        </a>
+        <a href="https://www.tiktok.com/@merli.ness?is_from_webapp=1&sender_device=pc" target="_blank">
+            <img src="tik-tok.png" alt="TikTok" class="ikonica-drustvene-mreze">
+        </a>
+        <a href="http://www.youtube.com/@merliness" target="_blank">
+            <img src="jutjub.png" alt="YouTube" class="ikonica-drustvene-mreze">
+        </a>
+    </div>
+    
+
+    <div class="futer-logo">
+        <a href="index.html">
+        <img src="logo-merliness.avif" alt="Logo" class="logo-futer">
+        </a>
+    </div>
+</footer>
+<script src="skripta.js"></script>  
+
+</body>
+</html>

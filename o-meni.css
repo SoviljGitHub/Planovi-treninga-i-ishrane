@@ -1,0 +1,990 @@
+body {
+    font-family: 'Arial Black', sans-serif;
+    background-color: rgb(246, 238, 214);
+}
+
+.navigacioni-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #181818;
+    z-index: 1000;
+    opacity: 0.9;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #f8b400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 16px; 
+}
+
+.logo img {
+    height: 100px;
+    width: auto;
+    transition: 0.3s;
+    margin-left: 0; 
+}
+
+.navigacioni-linkovi {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.navigacioni-linkovi li {
+    display: inline-block;
+}
+
+.navigacioni-linkovi a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.125rem;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: 0.3s ease-in-out;
+    position: relative;
+    white-space: nowrap; 
+}
+
+.navigacioni-linkovi a:hover {
+    color: #f8b400;
+    transform: scale(1.1);
+}
+
+.navigacioni-linkovi a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: #f8b400;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease-in-out;
+}
+
+.navigacioni-linkovi a:hover::after {
+    width: 100%;
+}
+
+.padajuci-meni {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+
+.padajuci-meni-sadrzaj {
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    background-color: #181818;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    flex-direction: column;
+    padding: 0;
+    border-radius: 4px;
+}
+
+.padajuci-meni-sadrzaj.prikazi {
+    display: flex;
+}
+
+.padajuci-meni-sadrzaj li {
+    display: block;
+}
+
+.padajuci-meni-sadrzaj li a {
+    color: white;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.padajuci-meni-sadrzaj li a:hover {
+    background-color: #333;
+    color: #f8b400;
+}
+
+.izbor-jezika {
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  gap: 10px;                
+  margin: 20px 0;          
+  flex-wrap: wrap;
+  margin-top: 150px;
+}
+
+.izbor-jezika select {
+    padding: 6px 12px;
+    font-size: 0.875rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+}
+
+.izbor-jezika button {
+    margin-left: 5px;
+    padding: 6px 10px;
+    font-size: 0.875rem;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.izbor-jezika button:hover {
+    background-color: #ddd;
+}
+
+.prekidac-teme {
+    background-color: transparent;
+    border: 2px solid #f8b400;
+    color: #f8b400;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.prekidac-teme:hover {
+    background-color: #f8b400;
+    color: #181818;
+}
+
+body.tamni-režim .prekidac-teme {
+    background-color: #333;
+    color: #eee;
+}
+
+.kontrola-fonta button {
+    margin: 0 5px;
+    padding: 6px 12px;
+    font-size: 1rem;
+    border: 2px solid #ffcc00;
+    border-radius: 6px;
+    background-color: #f0f0f0;
+    color: #000000;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.kontrola-fonta button:hover {
+    background-color: #e6b800;
+    color: white;
+}
+
+.kontejner-o-meni {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px; 
+    background-color: #1e1e1e; 
+    padding: 40px;
+    border-radius: 20px; 
+    box-shadow: 0px 4px 10px rgba(255, 165, 0, 0.6); 
+    width: 80%;
+    margin: 50px auto;
+    border: 3px solid orange; 
+    
+}
+
+.slika-o-meni img {
+    width: 400px; 
+    height: auto;
+    border-radius: 15px; 
+    border: 5px solid orange; 
+    box-shadow: 5px 5px 15px rgba(255, 140, 0, 0.7); 
+}
+
+.tekst-o-meni {
+    max-width: 600px;
+    color: white;
+}
+
+.tekst-o-meni h2 {
+    font-size: 1.75rem;
+    color: orange;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px rgba(255, 165, 0, 0.7);
+}
+
+.tekst-o-meni p {
+   font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+    text-shadow: 1px 1px 3px rgba(255, 165, 0, 0.3);
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+     width: 100%; 
+    box-sizing: border-box;
+}
+
+.futer-kontejner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    gap: 20px; 
+    box-sizing: border-box;
+}
+
+.futer-kolona {
+    flex: 1 1 200px; 
+    min-width: 200px;
+    box-sizing: border-box;
+}
+
+.futer-kolona h2,
+.futer-kolona h3 {
+    color: #ffcc00;
+}
+
+
+.futer-kolona img {
+    width: 100px;
+    margin: 10px 0;
+}
+
+.futer-kolona ul {
+    list-style: none;
+    padding: 0;
+}
+
+.futer-kolona ul li {
+    margin: 8px 0;
+}
+
+.futer-kolona ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: 0.3s;
+    position: relative;
+}
+
+.futer-kolona ul li a:hover {
+    color: #ffcc00;
+}
+
+.futer-kolona ul li a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #ffcc00;
+    transition: width 0.3s;
+}
+
+.futer-kolona ul li a:hover::after {
+    width: 100%;
+}
+
+.kontakt-forma {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.kontakt-forma h3 {
+    margin-bottom: 15px;
+    color: #ffcc00;
+}
+
+.kontakt-forma form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin: auto;
+}
+
+.kontakt-forma input,
+.kontakt-forma textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.kontakt-forma textarea {
+    height: 100px;
+    resize: none;
+}
+
+.kontakt-forma button {
+    background-color: #ffcc00;
+    color: #1a1a1a;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.kontakt-forma button:hover {
+    background-color: #e6b800;
+}
+
+body.tamni-režim .navigacioni-linkovi {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+body.tamni-režim .navigacioni-linkovi li {
+    display: inline-block;
+}
+
+body.tamni-režim .navigacioni-linkovi a {
+    text-decoration: none;
+    color: #80b3ff;
+    font-size: 1.125rem;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: 0.3s ease-in-out;
+    position: relative;
+    white-space: nowrap; 
+}
+
+body.tamni-režim .navigacioni-linkovi a:hover {
+    color: #aaddff;
+    transform: scale(1.1);
+}
+
+body.tamni-režim .navigacioni-linkovi a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: #80b3ff;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease-in-out;
+}
+
+body.tamni-režim .navigacioni-linkovi a:hover::after {
+    width: 100%;
+}
+
+ body.tamni-režim .kontrola-fonta button {
+    margin: 0 5px;
+    padding: 6px 12px;
+    font-size: 1rem;
+    border: 2px solid #0066cc;
+    border-radius: 6px;
+    background-color: #f0f0f0;
+    color: #0066cc;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.tamni-režim .kontrola-fonta button:hover {
+    background-color: #0066cc;
+    color: white;
+}
+
+body.tamni-režim .prekidac-teme {
+    background-color: #2a2a2a;
+    color: #80b3ff;
+    border-color: #80b3ff;
+}
+
+body.tamni-režim .prekidac-teme:hover {
+    background-color: #80b3ff;
+    color: #121212;
+    border-color: #aaddff;
+}
+
+body.tamni-režim .izbor-jezika select {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    border: 1px solid #555;
+}
+
+body.tamni-režim .kontejner-o-meni {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    background-color: #1a1a1a; 
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px rgba(128, 179, 255, 0.5); 
+    width: 80%;
+    margin: 50px auto;
+    border: 3px solid #80b3ff; 
+}
+
+body.tamni-režim .slika-o-meni img {
+    width: 400px;
+    height: auto;
+    border-radius: 15px;
+    border: 5px solid #80b3ff; 
+    box-shadow: 5px 5px 15px rgba(128, 179, 255, 0.5); 
+}
+
+body.tamni-režim .tekst-o-meni {
+    max-width: 600px;
+    color: #e6f0ff; 
+}
+
+body.tamni-režim .tekst-o-meni h2 {
+    font-size: 1.75rem;
+    color: #80b3ff;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px rgba(128, 179, 255, 0.6);
+}
+
+body.tamni-režim .tekst-o-meni p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+    text-shadow: 1px 1px 3px rgba(128, 179, 255, 0.2);
+}
+
+body.tamni-režim {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.tamni-režim footer {
+    background-color: #1a1a1a;
+    color: #ccc;
+}
+
+body.tamni-režim .futer-kolona h2,
+body.tamni-režim .futer-kolona h3 {
+    color: #e0e0e0;
+}
+
+body.tamni-režim .kontakt-forma h3 {
+    color: #e0e0e0; 
+}
+
+
+body.tamni-režim .futer-kolona a {
+    color: #80b3ff;
+}
+
+body.tamni-režim .futer-kolona a:hover {
+    color: #aaddff;
+}
+
+body.tamni-režim .futer-kolona ul li a {
+    color: #80b3ff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: 0.3s;
+    position: relative;
+}
+
+body.tamni-režim .futer-kolona ul li a:hover {
+    color: #aaddff;
+}
+
+body.tamni-režim .futer-kolona ul li a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #80b3ff;
+    transition: width 0.3s;
+}
+body.tamni-režim .futer-kolona ul li a:hover::after {
+    width: 100%;
+}
+
+body.tamni-režim .kontakt-forma input,
+body.tamni-režim .kontakt-forma textarea {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    border: 1px solid #555;
+}
+
+body.tamni-režim .kontakt-forma input:focus,
+body.tamni-režim .kontakt-forma textarea:focus {
+    border-color: #80b3ff;
+}
+
+body.tamni-režim .kontakt-forma button[type="submit"] {
+    background-color: #80b3ff;
+    color: #121212;
+}
+
+body.tamni-režim .kontakt-forma button[type="submit"]:hover {
+    background-color: #aaddff;
+    color: #121212;
+}
+
+.hamburger {
+  display: none;
+}
+
+ body.tamni-režim input:focus,
+ body.tamni-režim textarea:focus,
+ body.tamni-režim select:focus {
+  outline: none;
+  border: 2px solid #80b3ff; 
+  
+}
+
+
+
+@media (max-width: 600px) {
+   .navigacioni-bar {
+     position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px; 
+    z-index: 1000;   
+  }
+
+  .logo {
+    font-size: 1.2rem;
+    margin-left: 0;
+  }
+
+  .logo img {
+    height: 48px;
+    margin-left: 0;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  .navigacioni-linkovi {
+     display: none;
+    position: fixed;
+    top: 60px;          
+    left: 0;
+    right: 0;
+    bottom: 0;         
+    background: #181818;
+    flex-direction: column;
+    padding: 8px 0;
+    z-index: 1000;
+  }
+
+  .navigacioni-linkovi.prikazano {
+    display: flex;
+  }
+
+  .navigacioni-linkovi li {
+    margin: 0.5rem 0;
+  }
+  .navigacioni-linkovi li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    text-decoration: none;
+  }
+ 
+
+ html.bez-skrolovanja,
+ body.bez-skrolovanja {
+  overflow: hidden !important;
+}
+
+.izbor-jezika {
+    margin: 105px auto 15px;
+    flex-direction: column;
+    gap: 10px;             
+  }
+
+  .kontrola-fonta {
+    justify-content: center;
+  }
+
+  .kontejner-o-meni {
+    flex-direction: column;
+    padding: 20px;
+    width: 95%;
+    gap: 20px;
+  }
+
+  .slika-o-meni img {
+    width: 100%;
+    max-width: 300px;
+    border-width: 3px;
+    box-shadow: 3px 3px 10px rgba(255, 140, 0, 0.5);
+  }
+
+  .tekst-o-meni {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .tekst-o-meni h2 {
+    font-size: 1.5rem;
+  }
+
+  .tekst-o-meni p {
+    font-size: 1rem;
+  }
+
+  .futer-kontejner {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.futer-kolona {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.futer-kolona img {
+    width: 80px;
+}
+
+.futer-kolona ul li a {
+    font-size: 0.95rem;
+}
+
+.kontakt-forma form {
+    width: 100%;
+    padding: 0 10px;
+}
+
+.kontakt-forma {
+  padding: 0 20px;
+}
+
+body.tamni-režim .hamburger {
+    display: block;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  body.tamni-režim .navigacioni-linkovi {
+     display: none;
+    position: fixed;
+    top: 60px;          
+    left: 0;
+    right: 0;
+    bottom: 0;       
+    background: #181818;
+    flex-direction: column;
+    padding: 8px 0;
+    z-index: 1000;
+    width: 100%;
+    gap: 8px; 
+  }
+
+body.tamni-režim .navigacioni-linkovi a {
+    font-size: 1rem;
+    padding: 8px; 
+}
+
+body.tamni-režim .navigacioni-linkovi.prikazano {
+    display: flex;
+  }
+
+ body.tamni-režim .navigacioni-linkovi li {
+    margin: 0.5rem 0;
+  }
+ body.tamni-režim .navigacioni-linkovi li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #80b3ff;
+    text-decoration: none;
+  }
+   body.tamni-režim input:focus,
+ body.tamni-režim textarea:focus,
+ body.tamni-režim select:focus {
+  outline: none;
+  border: 2px solid #80b3ff; 
+}
+
+ body.tamni-režim .kontejner-o-meni {
+    flex-direction: column;
+    padding: 20px;
+    width: 95%;
+    gap: 20px;
+  }
+
+  body.tamni-režim .slika-o-meni img {
+    width: 100%;
+    max-width: 300px;
+    border-width: 3px;
+    box-shadow: 4px 4px 12px #80b3ff;
+  }
+
+  body.tamni-režim .tekst-o-meni {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+   body.tamni-režim .tekst-o-meni h2 {
+    font-size: 1.5rem;
+  }
+
+  body.tamni-režim .tekst-o-meni p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+    .navigacioni-bar {
+        padding: 16px 32px; 
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .logo img {
+        height: 64px;
+    }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  .navigacioni-linkovi {
+     display: none;
+    position: fixed;
+     top: 80px;           
+    left: 0;
+    right: 0;
+    bottom: 0;          
+    background: #181818;
+    flex-direction: column;
+     padding: 16px 0;
+    z-index: 1000;
+  }
+
+  .navigacioni-linkovi.prikazano {
+    display: flex;
+  }
+
+  .navigacioni-linkovi li {
+    margin: 0.5rem 0;
+  }
+  .navigacioni-linkovi li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    text-decoration: none;
+  }
+
+ html.bez-skrolovanja,
+ body.bez-skrolovanja {
+  overflow: hidden !important;
+}
+
+.kontejner-o-meni {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 30px;
+        width: 90%;
+        gap: 30px;
+        box-sizing: border-box;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .slika-o-meni img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        border-width: 4px;
+        box-shadow: 4px 4px 12px rgba(255, 140, 0, 0.6);
+        box-sizing: border-box;
+    }
+
+    .tekst-o-meni {
+        flex: 1;
+        max-width: 500px;
+        min-width: 250px;
+        word-wrap: break-word;
+        box-sizing: border-box;
+    }
+
+    .tekst-o-meni h2 {
+        font-size: 1.6rem;
+    }
+
+    .tekst-o-meni p {
+        font-size: 1.1rem;
+    }
+
+    .futer-kontejner {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0 20px;
+    }
+
+    .futer-kolona {
+        flex: 1 1 45%;
+        margin: 20px 10px;
+    }
+
+    .futer-kolona img {
+        width: 90px;
+    }
+
+    .futer-kolona ul li a {
+        font-size: 1rem;
+    }
+
+    .kontakt-forma form {
+        width: 100%;
+    }
+
+    body.tamni-režim .hamburger {
+    display: block;
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+ body.tamni-režim .navigacioni-linkovi {
+     display: none;
+    position: fixed;
+     top: 80px;           
+    left: 0;
+    right: 0;
+    bottom: 0;         
+    background: #181818;
+    flex-direction: column;
+     padding: 16px 0;
+    z-index: 1000;
+  }
+
+ body.tamni-režim .navigacioni-linkovi.prikazano {
+    display: flex;
+  }
+
+ body.tamni-režim .navigacioni-linkovi li {
+    margin: 0.5rem 0;
+  }
+ body.tamni-režim .navigacioni-linkovi li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #80b3ff;
+    text-decoration: none;
+  } 
+
+ body.tamni-režim input:focus,
+ body.tamni-režim textarea:focus,
+ body.tamni-režim select:focus {
+  outline: none;
+  border: 2px solid #80b3ff; 
+
+}
+
+body.tamni-režim .kontejner-o-meni {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 30px;
+        width: 90%;
+        gap: 30px;
+        box-sizing: border-box;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    body.tamni-režim .slika-o-meni img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        border-width: 4px;
+        box-shadow: 4px 4px 12px #80b3ff;
+        box-sizing: border-box;
+    }
+
+    body.tamni-režim .tekst-o-meni {
+        flex: 1;
+        max-width: 500px;
+        min-width: 250px;
+        word-wrap: break-word;
+        box-sizing: border-box;
+    }
+
+    body.tamni-režim .tekst-o-meni h2 {
+        font-size: 1.6rem;
+    }
+
+    body.tamni-režim .tekst-o-meni p {
+        font-size: 1.1rem;
+    }
+
+}

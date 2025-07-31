@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Zimski plan preživljavanja uključuje treninge, ishranu, mentorstvo i izazove. Iskoristi akciju do 28. februara i započni svoju transformaciju!">
+    <meta name="keywords" content="trening, ishrana, plan preživljavanja, zima, mentorstvo, izazovi, merliness, online fitnes plan">
+    <title> Zimski plan preživljavanja – Trening, ishrana, mentorstvo | Merliness</title>
+    <link rel="stylesheet" href="zimski-plan.css">
+    <link rel="icon" type="image/ico" href="logo-merliness.ico">
+</head>
+<body>
+    <nav class="navigacioni-bar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="logo-merliness.avif" alt="Merliness Logo" />
+            </a>
+        </div>
+
+        <button class="hamburger" onclick="prikaziMeni()">☰</button>
+
+        <ul class="navigacioni-linkovi" id="meni">
+            <li><a href="index.html" prevod-sr="Početna" prevod-en="Home">Početna</a></li>
+            <li><a href="o-meni.html" prevod-sr="O meni" prevod-en="About me">O meni</a></li>
+            <li><a href="proizvodi.html" prevod-sr="Proizvodi" prevod-en="Products">Proizvodi</a></li>
+            <li><a href="kontakt.html" prevod-sr="Kontakt" prevod-en="Contact">Kontakt</a></li> 
+        </ul>
+
+    </nav>
+
+    <div class="kontrole">
+    <button id="prekidac" class="prekidac-teme" prevod-sr="🌓 Tema" prevod-en="🌓 Theme">🌓 Tema</button>
+
+    <div class="kontrola-fonta">
+        <button id="umanji-font">A−</button>
+        <button id="povecaj-font">A+</button>
+    </div>
+
+    <div class="izbor-jezika">
+        <select onchange="promeniJezik(this)">
+            <option value="sr" selected>🇷🇸 Srpski</option>
+            <option value="en">🇬🇧 English</option>
+        </select>
+    </div>
+</div>
+
+    <div class="proizvod-kontejner">
+        <div class="proizvod-slika">
+            <img src="zimsko-prezivljavanje.jpg" alt="Zimsko prezivljavanje">
+        </div>
+
+        <div class="detalji-o-proizvodu">
+            <img class="logo-slika" src="zimsko-prezivljavanje-logo-naslov.png" alt="Zimsko preživljavanje">
+                <div class="cena-proizvod">
+                    <p class="cena-naziv">
+  <span prevod-sr="CENA:" prevod-en="PRICE:">CENA:</span>
+  <span class="snizena-cena" prevod-sr=" 19€" prevod-en=" 19€"> 19€</span> - 
+  <span class="regularna-cena">
+    <span prevod-sr="30€" prevod-en="€30">30€</span> 
+    <span prevod-sr=" redovna" prevod-en=" regular"> redovna</span>
+  </span>
+</p>
+                    <p class="promotivni-tekst" prevod-sr="TRAJE DO 28. FEBRUARA" prevod-en="LASTS UNTIL FEBRUARY 28" >TRAJE DO 28. FEBRUARA </p>
+                </div>
+                <button type="button" class="dugme-poruci"  prevod-sr="Poruči" prevod-en="Order" >Poruči</button>
+            
+        </div>
+    </div>
+
+    <div class="informacioni-kontejner">
+    <div class="dodatna-informacija">
+        <h1 class="informacija1">
+  <span prevod-sr="Šta mogu da očekujem od plana?" prevod-en="What can I expect from the plan?">Šta mogu da očekujem od plana?</span>
+</h1>
+
+<ul>
+  <li><img src="ikonica-provera.png" alt="Ikonica"> <span prevod-sr="Plan treninga za 8 nedelja" prevod-en="8-week workout plan">Plan treninga za 8 nedelja</span></li>
+  <li><img src="ikonica-provera.png" alt="Ikonica"> <span prevod-sr="Online mentorstvo celih 8 nedelja" prevod-en="Online mentorship for the full 8 weeks">Online mentorstvo celih 8 nedelja</span></li>
+  <li><img src="ikonica-provera.png" alt="Ikonica"> <span prevod-sr="Diskord grupu" prevod-en="Discord group">Diskord grupu</span></li>
+  <li><img src="ikonica-provera.png" alt="Ikonica"> <span prevod-sr="Video treninzi za noge i abs (prati - radi)" prevod-en="Video workouts for legs and abs (follow - do)">Video treninzi za noge i abs (prati - radi)</span></li>
+  <li><img src="ikonica-provera.png" alt="Ikonica"> <span prevod-sr="Ishranu koju možeš koristiti CEO ŽIVOT!" prevod-en="Nutrition you can use YOUR WHOLE LIFE!">Ishranu koju možeš koristiti CEO ŽIVOT!</span></li>
+  <li><img src="ikonica-provera.png" alt="Ikonica"> <span prevod-sr="IZAZOVI koje ispunjavaš i nakon par ispunjenih izazova dobijaš vredne nagrade!" prevod-en="CHALLENGES you complete, and after a few you get valuable rewards!">IZAZOVI koje ispunjavaš i nakon par ispunjenih izazova dobijaš vredne nagrade!</span></li>
+  <li><img src="ikonica-provera.png" alt="Ikonica"> <span prevod-sr="I na sve to te čeka jako dobra skupina ljudi koji će te podržavati i gurati napred!" prevod-en="And on top of all that, you’ll be welcomed by an amazing group of people who will support and push you forward!">I na sve to te čeka jako dobra skupina ljudi koji će te podržavati i gurati napred!</span></li>
+</ul>
+
+<h2 class="informacija2">
+  <span prevod-sr="Dodatne informacije" prevod-en="Additional information">Dodatne informacije</span>
+</h2>
+
+<ul>
+  <li><img src="ikonica-provera.png" alt="Ikonica"> 
+    <span prevod-sr="Nakon kupovine plana, na mejl dobijate testove koje treba da uradite radi izrade personalizovanog treninga."
+          prevod-en="After purchasing the plan, you will receive tests by email that you need to complete in order to create a personalized training.">
+      Nakon kupovine plana, na mejl dobijate testove koje treba da uradite radi izrade personalizovanog treninga.
+    </span>
+  </li>
+  <li><img src="ikonica-provera.png" alt="Ikonica"> 
+    <span prevod-sr="Dobijate plan koji traje od 6 do 8 nedelja, u zavisnosti od vašeg napretka." 
+          prevod-en="You’ll receive a plan lasting 6 to 8 weeks, depending on your progress.">
+      Dobijate plan koji traje od 6 do 8 nedelja, u zavisnosti od vašeg napretka.
+    </span>
+  </li>
+  <li><img src="ikonica-provera.png" alt="Ikonica"> 
+    <span prevod-sr="Pridružujete se Discord grupi gde se vodi mentorstvo." 
+          prevod-en="You’ll join a Discord group where mentorship takes place.">
+      Pridružujete se Discord grupi gde se vodi mentorstvo.
+    </span>
+  </li>
+  <li><img src="ikonica-provera.png" alt="Ikonica"> 
+    <span prevod-sr="Omogućeno je postavljanje privatnih pitanja i direktan kontakt." 
+          prevod-en="You’ll be able to ask private questions and have direct contact.">
+      Omogućeno je postavljanje privatnih pitanja i direktan kontakt.
+    </span>
+  </li>
+  <li><img src="ikonica-provera.png" alt="Ikonica"> 
+    <span prevod-sr="Na kraju 6-8 nedelja, ako budete zadovoljni, dobićete savet za obnavljanje treninga." 
+          prevod-en="At the end of 6–8 weeks, if you’re satisfied, you’ll get advice on continuing your training.">
+      Na kraju 6-8 nedelja, ako budete zadovoljni, dobićete savet za obnavljanje treninga.
+    </span>
+  </li>
+</ul>
+
+    </div>
+</div>
+
+<footer class="futer">
+    <div class="metode-placanja">
+        <img src="američka-ekspresna-kartica.png" alt="Americka ekspresna kartica" class="ikonice-placanja">
+        <img src="dina-kartica.png" alt="Dina" class="ikonice-placanja">
+        <img src="viza-kartica.png" alt="Viza" class="ikonice-placanja">
+        <img src="master-kartica.png" alt="Master" class="ikonice-placanja">
+        <img src="maestro-kartica.png" alt="Maestro" class="ikonice-placanja">
+        <img src="banka-inteza.png" alt="Banka Inteza" class="ikonice-placanja">
+        <img src="master-kartica-sigurnosni-kod.png" alt="Master sigurnosni kod" class="ikonice-placanja">
+        <img src="visa-bezbednosna-usluga.png" alt="Viza bezbedonosna usluga" class="ikonice-placanja">
+        <img src="pejpal-logo.png" alt="Pejpal" class="ikonice-placanja">
+    </div>
+
+    <div class="ikonice-drustvene-mreze">
+        <a href="https://www.instagram.com/merli.ness?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+            <img src="instagram.png" alt="Instagram" class="ikonica-drustvene-mreze">
+        </a>
+        <a href="https://www.tiktok.com/@merli.ness?is_from_webapp=1&sender_device=pc" target="_blank">
+            <img src="tik-tok.png" alt="TikTok" class="ikonica-drustvene-mreze">
+        </a>
+        <a href="http://www.youtube.com/@merliness" target="_blank">
+            <img src="jutjub.png" alt="YouTube" class="ikonica-drustvene-mreze">
+        </a>
+    </div>
+    
+    <div class="futer-logo">
+        <a href="index.html">
+        <img src="logo-merliness.avif" alt="Logo" class="logo-futer">
+        </a>
+    </div>
+</footer>
+
+<script src="skripta.js"></script>  
+
+</body>
+</html>
