@@ -1,6 +1,6 @@
 # Planovi treninga i ishrane
 
-Veb prezentacija namenjena korisnicima koji žele da unaprede svoje fizičko
+Veb sajt namenjen korisnicima koji žele da unaprede svoje fizičko
 zdravlje kroz pravilnu ishranu i strukturirane planove vežbanja.
 
 ## Tehnologije
